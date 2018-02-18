@@ -8,7 +8,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="format-detection" content="telephone=no">
         
-        <link rel="stylesheet" href="/assets/styles.css">
 
         <meta property="og:url" content="http://www.google.com.br/" />
         <meta property="og:type" content="website" />
@@ -18,14 +17,28 @@
         <meta property="og:locale" content="pt_BR" />
     <link href="assets/styles.css" rel="stylesheet"></head>
     <body>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="display: none;visibility: hidden;">
+        <filter id="blur">
+            <feGaussianBlur stdDeviation="3"></feGaussianBlur>
+        </filter>
+    </svg>
         <!--[if lte IE 9]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
         
-    <div class="header">
+            
+<div class="header">
     <div class="header__top-line">
-        <div class="search"></div>
-        <div class="logo"></div>
+        <div class="search">
+            
+	<svg class="icon-play _btn btn__icon-svg" >
+		<use xlink:href="#iconsearch"></use>
+	</svg>
+
+        </div>
+        <div class="logo">
+
+        </div>
         <div class="personal">
             <div class="login"></div>
             <div class="cart">
@@ -44,7 +57,7 @@
         </div>
     </div>
 </div>
-
+        
         
   <div class="slider"></div>
   <div class="catalog">
@@ -77,15 +90,15 @@
 </div>
 
         
-    <div class="footer">
+            <div class="footer">
     <div class="logo"></div>
     <div class="rights"></div>
     <div class="socials"></div>
     <div class="payment"></div>
 </div>
-
         
-    <!-- COUNTERS -->
-
+        
+            <!-- COUNTERS -->
+        
     <script type="text/javascript" src="assets/scripts.js"></script><script type="text/javascript" src="assets/styles.js"></script></body>
 </html>

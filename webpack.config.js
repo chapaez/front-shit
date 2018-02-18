@@ -5,6 +5,8 @@ const glob = require('glob');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var NunjucksWebpackPlugin = require("nunjucks-webpack-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+var SvgStore = require('webpack-svgstore-plugin');
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 const isDev = (process.env.NODE_ENV === 'development') ? true : false;
 const basePath = process.cwd();
@@ -87,6 +89,22 @@ module.exports = {
             $: 'jquery',
             jQuery: 'jquery'
         }),
+        new SvgStore({
+            // svgo options
+            svgoOptions: {
+                plugins: [
+                    { removeTitle: true }
+                ]
+            },
+            prefix: 'icon'
+        }),
+        new BrowserSyncPlugin({
+            // browse to http://localhost:3000/ during development,
+            // ./public directory is being served
+            host: 'localhost',
+            port: 3000,
+            server: { }
+        })
 
     ],
     externals: {

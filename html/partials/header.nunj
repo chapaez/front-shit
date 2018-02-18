@@ -1,7 +1,12 @@
+{% from "lib/macro.nunj" import svgUse %}
 <div class="header">
     <div class="header__top-line">
-        <div class="search"></div>
-        <div class="logo"></div>
+        <div class="search">
+            {{ svgUse('search', {class: 'icon-play _btn btn__icon-svg'}) }}
+        </div>
+        <div class="logo">
+
+        </div>
         <div class="personal">
             <div class="login"></div>
             <div class="cart">
