@@ -90,7 +90,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__js_scripts_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__js_scripts_js__);
 
 
-var __svg__ = { filename: __webpack_require__.p +"/assets/sprite.svg" };
+var __svg__ = { filename: __webpack_require__.p +"./sprite.svg" };
+__svg__ = {filename: './assets/sprite.svg'};
 __webpack_require__(4)(__svg__);
 
 /***/ }),

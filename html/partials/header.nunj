@@ -1,27 +1,42 @@
 {% from "lib/macro.nunj" import svgUse %}
 <div class="header">
     <div class="header__top-line">
-        <div class="search">
-            {{ svgUse('search', {class: 'icon-play _btn btn__icon-svg'}) }}
-        </div>
-        <div class="logo">
-
-        </div>
-        <div class="personal">
-            <div class="login"></div>
-            <div class="cart">
-                <div class="orders-count"></div>
+        <div class="content _centered">
+            <div class="search">
+                <form class="main-search" action="/catalog/index" method="GET" data-search="search-box">
+                    {{ svgUse('icn_header_search', {class: 'icon _search'}) }}
+                    <input class="search-line no-border" type="text" name="q" placeholder="Поиск" required="" data-search="search-input">
+                </form>
+            </div>
+            <div class="logo">
+                {{ svgUse('store-logo', {class: 'icon _logo'}) }}
+            </div>
+            <div class="personal">
+                <a href="/user/profile/">
+                    <div class="login">
+                        <div class="login__label">Войти</div>
+                        {{ svgUse('icn_menu_person', {class: 'icon _person'}) }}
+                    </div>
+                </a>
+                <a href="/user/cart/">
+                    <div class="cart">
+                        {{ svgUse('icn_menu_cart', {class: 'icon _person'}) }}
+                        <div class="orders-count"></div>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
     <div class="header__bottom-line">
-        <div class="menu">
-            <div class="menu__item">Каталог</div>
-            <div class="menu__item">Оплата</div>
-            <div class="menu__item">Обмен и возврат</div>
-            <div class="menu__item">Самовывоз</div>
-            <div class="menu__item">Доставка</div>
-            <div class="menu__item">Контакты</div>
+        <div class="content _centered">
+            <div class="menu">
+                <div class="menu__item">Каталог</div>
+                <div class="menu__item">Оплата</div>
+                <div class="menu__item">Обмен и возврат</div>
+                <div class="menu__item">Самовывоз</div>
+                <div class="menu__item">Доставка</div>
+                <div class="menu__item">Контакты</div>
+            </div>
         </div>
     </div>
 </div>

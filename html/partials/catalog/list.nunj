@@ -1,0 +1,17 @@
+<div class="catalog-list">
+    {% include 'partials/catalog/banner_x1.nunj' %}
+    {% include 'partials/catalog/banner_x2.nunj' %}
+    {% include 'partials/catalog/item.nunj' %}
+    {% include 'partials/catalog/item.nunj' %}
+    {% include 'partials/catalog/item.nunj' %}
+    {% include 'partials/catalog/item.nunj' %}
+    {% include 'partials/catalog/item.nunj' %}
+    {% include 'partials/catalog/item.nunj' %}
+    {% include 'partials/catalog/banner_wide.nunj' %}
+    {% include 'partials/catalog/item.nunj' %}
+    {% include 'partials/catalog/item.nunj' %}
+    {% include 'partials/catalog/item.nunj' %}
+    {% include 'partials/catalog/item.nunj' %}
+    {% include 'partials/catalog/item.nunj' %}
+    {% include 'partials/catalog/item.nunj' %}
+</div>

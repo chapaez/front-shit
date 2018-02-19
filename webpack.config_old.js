@@ -21,6 +21,13 @@ const nunjucksOptions = JSON.stringify({
     searchPaths: basePath + '/html/',
     context: nunjucksContext
 });
+/*glob.sync('**!/!*.njk', {
+    cwd: path.join(basePath, 'html/pages/'),
+    root: '/',
+}).map(page => {
+    console.log(page.replace('njk', 'html'));
+    console.log(`html/pages/${page}`);
+});*/
 
 const pages = glob.sync('**/*.njk', {
     cwd: path.join(basePath, 'html/pages/'),
@@ -31,6 +38,8 @@ const pages = glob.sync('**/*.njk', {
         template: `html/pages/${page}`,
     })
 );
+
+
 
 module.exports = {
     context: __dirname,
@@ -55,40 +64,16 @@ module.exports = {
 
     module: {
         rules: [
+            // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
+            //{ test: /\.js$/, enforce: "pre", loader: "source-map-loader" },
+
             { test: /\.woff2?$|\.ttf$|\.eot$|\.svg$/, loader: 'file-loader?name=fonts/[name].[ext]?[hash]'},
 
             { test: /\.png|\.jpe?g|\.gif$/, loader: 'file-loader?name=img/[name].[ext]?[hash]'},
 
             {
                 test: /\.scss$/,
-                loader: ExtractTextPlugin.extract({
-                    fallback: 'style-loader',
-                    use: [
-                        {
-                            loader: 'css-loader',
-                            options : { autoprefixer: false, sourceMap: true, importLoaders: 1}
-                        },
-                        {
-                            loader: 'resolve-url-loader',
-                            options: {keepQuery:true}
-                        },
-                        {
-                            loader: 'postcss-loader',
-                            options: {
-                                plugins: [
-                                    autoprefixer({
-                                        browsers:['ie >= 10', 'last 4 version']
-                                    })
-                                ],
-                                sourceMap: true
-                            }
-                        },
-                        {
-                            loader: 'sass-loader',
-                            options: {sourceMap:true}
-                        }
-                    ]
-                })
+                loader: ExtractTextPlugin.extract({ fallback: 'style-loader', use: 'css-loader!resolve-url-loader?keepQuery!sass-loader?sourceMap'})
             },
             { test: /\.css$/, use: [ 'style-loader', 'css-loader' ] },
             {
@@ -114,6 +99,8 @@ module.exports = {
             prefix: 'icon'
         }),
         new BrowserSyncPlugin({
+            // browse to http://localhost:3000/ during development,
+            // ./public directory is being served
             host: 'localhost',
             port: 3000,
             server: { }

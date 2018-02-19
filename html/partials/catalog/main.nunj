@@ -1,0 +1,6 @@
+<div class="catalog">
+    {% block content %}
+    {% include 'partials/catalog/menu.nunj' %}
+    {% include 'partials/catalog/list.nunj' %}
+    {% endblock %}
+</div>

@@ -1,4 +1,53 @@
 @import "~normalize.css";
-body{
-  background-color:grey;
+@import "mixins";
+@import "vars";
+
+.no-border{
+  outline: none;
+  border: 0;
+
+}
+.content{
+  &._centered{
+    width: 1200px;
+    margin: 0 auto;
+  }
+  &._wide{
+    width: 100%;
+  }
+}
+.header{
+  width: 100%;
+  height: 145px;
+  background-color: $black;
+}
+
+.icon{
+  fill:$white;
+  background-color: $black;
+  cursor: pointer;
+  &._search{
+    height: 24px;
+    width: 24px;
+  }
+  &._person{
+    height: 36px;
+    width: 36px;
+    fill: $black;
+  }
+  &._cart{
+
+  }
+}
+.search-line{
+  background-color: $black;
+  color: $white;
+  &::placeholder{
+    color: white;
+    font-size: 14px;
+  }
+}
+
+.login{
+
 }

@@ -29,31 +29,58 @@
             
 <div class="header">
     <div class="header__top-line">
-        <div class="search">
-            
-	<svg class="icon-play _btn btn__icon-svg" >
-		<use xlink:href="#iconsearch"></use>
+        <div class="content _centered">
+            <div class="search">
+                <form class="main-search" action="/catalog/index" method="GET" data-search="search-box">
+                    
+	<svg class="icon _search" >
+		<use xlink:href="#iconicn_header_search"></use>
 	</svg>
 
-        </div>
-        <div class="logo">
+                    <input class="search-line no-border" type="text" name="q" placeholder="Поиск" required="" data-search="search-input">
+                </form>
+            </div>
+            <div class="logo">
+                
+	<svg class="icon _logo" >
+		<use xlink:href="#iconstore-logo"></use>
+	</svg>
 
-        </div>
-        <div class="personal">
-            <div class="login"></div>
-            <div class="cart">
-                <div class="orders-count"></div>
+            </div>
+            <div class="personal">
+                <a href="/user/profile/">
+                    <div class="login">
+                        <div class="login__label">Войти</div>
+                        
+	<svg class="icon _person" >
+		<use xlink:href="#iconicn_menu_person"></use>
+	</svg>
+
+                    </div>
+                </a>
+                <a href="/user/cart/">
+                    <div class="cart">
+                        
+	<svg class="icon _person" >
+		<use xlink:href="#iconicn_menu_cart"></use>
+	</svg>
+
+                        <div class="orders-count"></div>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
     <div class="header__bottom-line">
-        <div class="menu">
-            <div class="menu__item">Каталог</div>
-            <div class="menu__item">Оплата</div>
-            <div class="menu__item">Обмен и возврат</div>
-            <div class="menu__item">Самовывоз</div>
-            <div class="menu__item">Доставка</div>
-            <div class="menu__item">Контакты</div>
+        <div class="content _centered">
+            <div class="menu">
+                <div class="menu__item">Каталог</div>
+                <div class="menu__item">Оплата</div>
+                <div class="menu__item">Обмен и возврат</div>
+                <div class="menu__item">Самовывоз</div>
+                <div class="menu__item">Доставка</div>
+                <div class="menu__item">Контакты</div>
+            </div>
         </div>
     </div>
 </div>
