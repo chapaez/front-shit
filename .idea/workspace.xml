@@ -2,57 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cde41ef-876b-4e59-84e9-6a61e42c5b2f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icn_footer_fb.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icn_footer_in.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icn_footer_od.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icn_footer_tw.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icn_footer_vk.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icn_footer_yt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icn_header_search.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icn_header_search_colored.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icn_menu_cart.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icn_menu_person.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icn_menu_phone.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icn_product_cart_default.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icn_product_like_default.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/img_footer_mastercard.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/img_footer_visa.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/logo-small-active.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/logo-small.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/logo.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/slider-thumbs-arrows.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/store-logo.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/_vars.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webpack.config_old.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/scripts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/styles.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/styles.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/index.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/partials/catalog/banner_wide.html" afterPath="$PROJECT_DIR$/html/partials/catalog/banner_wide.nunj" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/partials/catalog/banner_x1.html" afterPath="$PROJECT_DIR$/html/partials/catalog/banner_x1.nunj" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/partials/catalog/banner_x2.html" afterPath="$PROJECT_DIR$/html/partials/catalog/banner_x2.nunj" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/partials/catalog/item.html" afterPath="$PROJECT_DIR$/html/partials/catalog/item.nunj" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/partials/catalog/list.html" afterPath="$PROJECT_DIR$/html/partials/catalog/list.nunj" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/partials/catalog/main.html" afterPath="$PROJECT_DIR$/html/partials/catalog/main.nunj" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/partials/catalog/menu.html" afterPath="$PROJECT_DIR$/html/partials/catalog/menu.nunj" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/partials/counters.html" afterPath="$PROJECT_DIR$/html/partials/counters.nunj" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/partials/footer.html" afterPath="$PROJECT_DIR$/html/partials/footer.nunj" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/partials/slider.html" afterPath="$PROJECT_DIR$/html/partials/slider.nunj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Roboto-Black.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Roboto-BlackItalic.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Roboto-Bold.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Roboto-BoldItalic.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Roboto-Italic.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Roboto-Light.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Roboto-LightItalic.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Roboto-Medium.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Roboto-MediumItalic.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Roboto-Regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Roboto-Thin.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/Roboto-ThinItalic.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/intro_0-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/intro_0-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/intro_0-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/intro_0-webfont.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/intro_0-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/_fonts.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/_reset.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scripts.js" afterPath="$PROJECT_DIR$/assets/scripts.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scripts.js.map" afterPath="$PROJECT_DIR$/assets/scripts.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/styles.css" afterPath="$PROJECT_DIR$/assets/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/styles.css.map" afterPath="$PROJECT_DIR$/assets/styles.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/styles.js" afterPath="$PROJECT_DIR$/assets/styles.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/styles.js.map" afterPath="$PROJECT_DIR$/assets/styles.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.js" afterPath="$PROJECT_DIR$/build.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/layouts/app.nunj" afterPath="$PROJECT_DIR$/html/layouts/app.nunj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/pages/main.njk" afterPath="$PROJECT_DIR$/html/pages/main.njk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/partials/header.nunj" afterPath="$PROJECT_DIR$/html/partials/header.nunj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/store-logo.svg" afterPath="$PROJECT_DIR$/img/store-logo.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.html" afterPath="$PROJECT_DIR$/main.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/style.scss" afterPath="$PROJECT_DIR$/scss/style.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -62,19 +45,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.60242426">
+    <splitter split-orientation="horizontal" split-proportion="0.45030302">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="main.njk" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/html/pages/main.njk">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="list.nunj" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/html/partials/catalog/list.nunj">
               <provider selected="true" editor-type-id="text-editor">
@@ -85,21 +58,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/main.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="main.nunj" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/html/partials/catalog/main.nunj">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="85">
-                  <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+                <state relative-caret-position="0">
+                  <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
                   <folding />
                 </state>
               </provider>
@@ -108,8 +71,8 @@
           <file leaf-file-name="app.nunj" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/html/layouts/app.nunj">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="402">
-                  <caret line="36" column="41" lean-forward="false" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
+                <state relative-caret-position="408">
+                  <caret line="24" column="26" lean-forward="false" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
                   <folding />
                 </state>
               </provider>
@@ -118,40 +81,62 @@
           <file leaf-file-name="header.nunj" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/html/partials/header.nunj">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="326">
-                  <caret line="31" column="28" lean-forward="false" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="28" />
+                <state relative-caret-position="476">
+                  <caret line="28" column="10" lean-forward="false" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/index.html">
+          <file leaf-file-name="store-logo.svg" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/img/store-logo.svg">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="23" column="34" lean-forward="false" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="34" />
+                <state relative-caret-position="0">
+                  <caret line="0" column="223" lean-forward="false" selection-start-line="0" selection-start-column="113" selection-end-line="0" selection-end-column="223" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/webpack.config.js">
+          <file leaf-file-name="build.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/build.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="314">
-                  <caret line="115" column="31" lean-forward="false" selection-start-line="115" selection-start-column="31" selection-end-line="115" selection-end-column="31" />
+                <state relative-caret-position="85">
+                  <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
                   <folding>
-                    <marker date="1519036659318" expanded="true" signature="3879:3885" ph="[...]" />
+                    <element signature="e#0#25#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/assets/styles.css">
+          <file leaf-file-name="search.svg" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/img/search.svg">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="367">
-                  <caret line="433" column="27" lean-forward="true" selection-start-line="433" selection-start-column="27" selection-end-line="433" selection-end-column="27" />
+                <state relative-caret-position="0">
+                  <caret line="0" column="165" lean-forward="false" selection-start-line="0" selection-start-column="165" selection-end-line="0" selection-end-column="165" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/webpack.config.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="569">
+                  <caret line="121" column="6" lean-forward="false" selection-start-line="121" selection-start-column="6" selection-end-line="121" selection-end-column="6" />
+                  <folding>
+                    <marker date="1519039333421" expanded="true" signature="3879:3885" ph="[...]" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="sprite.svg" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/assets/sprite.svg">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-1887">
+                  <caret line="0" column="23370" lean-forward="false" selection-start-line="0" selection-start-column="23370" selection-end-line="0" selection-end-column="23370" />
                   <folding />
                 </state>
               </provider>
@@ -174,18 +159,18 @@
           <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scss/style.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="24" column="6" lean-forward="false" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+                <state relative-caret-position="172">
+                  <caret line="55" column="23" lean-forward="false" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="store-logo.svg" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/img/store-logo.svg">
+          <file leaf-file-name="_reset.scss" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/scss/_reset.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="332" lean-forward="false" selection-start-line="0" selection-start-column="332" selection-end-line="0" selection-end-column="332" />
+                <state relative-caret-position="326">
+                  <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -195,7 +180,17 @@
             <entry file="file://$PROJECT_DIR$/scss/_mixins.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_fonts.scss" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/scss/_fonts.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="85">
+                  <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -228,12 +223,16 @@
       <find>css</find>
       <find>norma</find>
       <find>styles</find>
-      <find>jq</find>
       <find>html</find>
       <find>.html</find>
       <find>-logo</find>
       <find>build</find>
+      <find>search</find>
       <find>ExtractTextPlugin</find>
+      <find>logo</find>
+      <find>tm-link</find>
+      <find>login__label</find>
+      <find>jq</find>
     </findStrings>
     <replaceStrings>
       <replace>.nunj</replace>
@@ -255,17 +254,21 @@
         <option value="$PROJECT_DIR$/js/scripts.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/build/index.js" />
-        <option value="$PROJECT_DIR$/build.js" />
-        <option value="$PROJECT_DIR$/html/layouts/app.nunj" />
         <option value="$PROJECT_DIR$/html/pages/main.njk" />
         <option value="$PROJECT_DIR$/html/partials/catalog/list.nunj" />
         <option value="$PROJECT_DIR$/html/partials/catalog/main.nunj" />
         <option value="$PROJECT_DIR$/scss/_vars.scss" />
-        <option value="$PROJECT_DIR$/img/store-logo.svg" />
-        <option value="$PROJECT_DIR$/html/partials/header.nunj" />
-        <option value="$PROJECT_DIR$/scss/style.scss" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
+        <option value="$PROJECT_DIR$/assets/sprite.svg" />
+        <option value="$PROJECT_DIR$/img/store-logo.svg" />
+        <option value="$PROJECT_DIR$/assets/styles.css" />
+        <option value="$PROJECT_DIR$/scss/_fonts.scss" />
+        <option value="$PROJECT_DIR$/html/partials/header.nunj" />
+        <option value="$PROJECT_DIR$/html/layouts/app.nunj" />
+        <option value="$PROJECT_DIR$/scss/_reset.scss" />
+        <option value="$PROJECT_DIR$/scss/style.scss" />
+        <option value="$PROJECT_DIR$/build.js" />
       </list>
     </option>
   </component>
@@ -287,8 +290,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2377" />
-    <option name="y" value="-12" />
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -321,6 +324,16 @@
               <item name="untitled1" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="untitled1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="untitled1" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="fonts" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="untitled1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="untitled1" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="scss" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -340,8 +353,9 @@
       <recent name="C:\Users\aberkov\Downloads\hello-react-and-typescript-0.0.4\untitled1\js" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\aberkov\Downloads\hello-react-and-typescript-0.0.4\untitled1" />
+      <recent name="C:\Users\aberkov\Downloads\hello-react-and-typescript-0.0.4\untitled1\fonts" />
       <recent name="C:\Users\aberkov\Downloads\hello-react-and-typescript-0.0.4\untitled1\img" />
+      <recent name="C:\Users\aberkov\Downloads\hello-react-and-typescript-0.0.4\untitled1" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -367,12 +381,20 @@
       <option name="presentableId" value="Default" />
       <updated>1518698574063</updated>
       <workItem from="1518698576537" duration="7126000" />
-      <workItem from="1519027304545" duration="9331000" />
+      <workItem from="1519027304545" duration="17456000" />
     </task>
+    <task id="LOCAL-00001" summary="autoprefixer">
+      <created>1519036702387</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1519036702387</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16457000" />
+    <option name="totallyTimeSpent" value="24582000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -402,6 +424,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="autoprefixer" />
+    <option name="LAST_COMMIT_MESSAGE" value="autoprefixer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -437,7 +463,7 @@
         <state relative-caret-position="782">
           <caret line="46" column="24" lean-forward="true" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
           <folding>
-            <marker date="1519036659318" expanded="true" signature="3879:3885" ph="[...]" />
+            <marker date="1519039333421" expanded="true" signature="3879:3885" ph="[...]" />
           </folding>
         </state>
       </provider>
@@ -525,14 +551,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css" />
     <entry file="file://$PROJECT_DIR$/css/normalize.css" />
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="25" lean-forward="false" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build/main.js" />
     <entry file="file://$PROJECT_DIR$/build/plugins.js" />
     <entry file="file://$PROJECT_DIR$/assets/scripts.js">
@@ -574,50 +592,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="41" lean-forward="false" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/layouts/app.nunj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="36" column="41" lean-forward="false" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/pages/main.njk">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/partials/catalog/main.nunj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/partials/catalog/list.nunj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="6" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -630,50 +608,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/img/search.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/sprite.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="0" column="19372" lean-forward="false" selection-start-line="0" selection-start-column="19367" selection-end-line="0" selection-end-column="19372" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/store-logo.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="332" lean-forward="false" selection-start-line="0" selection-start-column="332" selection-end-line="0" selection-end-column="332" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/_vars.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/_mixins.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="24" column="6" lean-forward="false" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -694,14 +632,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/partials/header.nunj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="31" column="28" lean-forward="false" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/styles.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -718,20 +648,134 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/styles.css">
+    <entry file="file://$PROJECT_DIR$/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="433" column="27" lean-forward="true" selection-start-line="433" selection-start-column="27" selection-end-line="433" selection-end-column="27" />
+        <state relative-caret-position="-867">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/search.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="165" lean-forward="false" selection-start-line="0" selection-start-column="165" selection-end-line="0" selection-end-column="165" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/sprite.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1887">
+          <caret line="0" column="23370" lean-forward="false" selection-start-line="0" selection-start-column="23370" selection-end-line="0" selection-end-column="23370" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/store-logo.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="223" lean-forward="false" selection-start-line="0" selection-start-column="113" selection-end-line="0" selection-end-column="223" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="115" column="31" lean-forward="false" selection-start-line="115" selection-start-column="31" selection-end-line="115" selection-end-column="31" />
+        <state relative-caret-position="569">
+          <caret line="121" column="6" lean-forward="false" selection-start-line="121" selection-start-column="6" selection-end-line="121" selection-end-column="6" />
           <folding>
-            <marker date="1519036659318" expanded="true" signature="3879:3885" ph="[...]" />
+            <marker date="1519039333421" expanded="true" signature="3879:3885" ph="[...]" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/_mixins.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/_fonts.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="462" column="1" lean-forward="true" selection-start-line="462" selection-start-column="1" selection-end-line="462" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/partials/catalog/main.nunj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/layouts/app.nunj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="26" lean-forward="false" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/_reset.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="55" column="23" lean-forward="false" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/partials/header.nunj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="10" lean-forward="false" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="43" column="7" lean-forward="false" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/partials/catalog/list.nunj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="6" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>

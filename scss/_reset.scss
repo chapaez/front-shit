@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent
+}
+
+body,html {
+  width: 100%;
+  height: 100%;
+  cursor: default
+}
+
+
+fieldset,img {
+  border: 0
+}
+
+fieldset legend {
+  display: none
+}
+
+li,ul {
+  list-style-type: none
+}
+
+img {
+  vertical-align: top
+}
+
+a:active,a:hover,a:link,a:visited {
+  text-decoration: none
+}
+
+table {
+  border: 0;
+  border-collapse: collapse
+}
+
+table td {
+  padding: 0;
+  vertical-align: top
+}
+
+input,select,textarea {
+  box-sizing: border-box
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0
+}
+
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0
+}
+
+input[type=number] {
+  -moz-appearance: textfield
+}
+
+input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration,input[type=search]::-webkit-search-results-button,input[type=search]::-webkit-search-results-decoration {
+  display: none
+}
+
+input[type=search] {
+  -webkit-appearance: textfield
+}
+
+input {
+  font-family: "Gotham Pro"
+}
+
+input:placeholder {
+  color: #707070
+}
+
+input:focus {
+  outline: 0
+}
+
+textarea:placeholder {
+  color: #959595
+}
+
+textarea:focus {
+  outline: 0
+}
+
+::-moz-selection {
+  background: #3fcdfd;
+  color: #fff;
+  text-shadow: none
+}
+
+::selection {
+  background: #3fcdfd;
+  color: #fff;
+  text-shadow: none
+}
+
+::-moz-selection {
+  background: #3fcdfd;
+  color: #fff;
+  text-shadow: none
+}
+
+#__bs_notify__ {
+  padding: 2px!important;
+  font-size: 10px!important;
+  opacity: .75;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none
+}

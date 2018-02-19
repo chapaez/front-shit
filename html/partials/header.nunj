@@ -8,35 +8,37 @@
                     <input class="search-line no-border" type="text" name="q" placeholder="Поиск" required="" data-search="search-input">
                 </form>
             </div>
-            <div class="logo">
-                {{ svgUse('store-logo', {class: 'icon _logo'}) }}
-            </div>
             <div class="personal">
-                <a href="/user/profile/">
+                <a class="personal__link" href="/user/profile/">
                     <div class="login">
                         <div class="login__label">Войти</div>
                         {{ svgUse('icn_menu_person', {class: 'icon _person'}) }}
                     </div>
                 </a>
-                <a href="/user/cart/">
+                <a class="personal__link" href="/user/cart/">
                     <div class="cart">
                         {{ svgUse('icn_menu_cart', {class: 'icon _person'}) }}
                         <div class="orders-count"></div>
                     </div>
                 </a>
             </div>
+            <div class="logo">
+                <a href="/">{{ svgUse('store-logo', {class: 'logo-pic'}) }}</a>
+            </div>
         </div>
     </div>
     <div class="header__bottom-line">
         <div class="content _centered">
-            <div class="menu">
-                <div class="menu__item">Каталог</div>
-                <div class="menu__item">Оплата</div>
-                <div class="menu__item">Обмен и возврат</div>
-                <div class="menu__item">Самовывоз</div>
-                <div class="menu__item">Доставка</div>
-                <div class="menu__item">Контакты</div>
-            </div>
+            <nav class="top-menu">
+                <ul class="tm-list">
+                    <li class="tm-item"><a class="tm-link" href="/catalog/">Каталог</a></li>
+                    <li class="tm-item"><a class="tm-link" href="/payment/">Оплата</a></li>
+                    <li class="tm-item"><a class="tm-link" href="/delivery/">Обмен и возврат</a></li>
+                    <li class="tm-item"><a class="tm-link" href="/pickup/">Самовывоз</a></li>
+                    <li class="tm-item"><a class="tm-link" href="/return/">Доставка</a></li>
+                    <li class="tm-item"><a class="tm-link" href="/contacts/">Контакты</a></li>
+                </ul>
+            </nav>
         </div>
     </div>
 </div>

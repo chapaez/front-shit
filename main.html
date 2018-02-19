@@ -16,7 +16,7 @@
         <meta property="og:image" content="https://www.google.com.br/logos/doodles/2017/childrens-day-2017-brazil-5737042666323968-l.png" />
         <meta property="og:locale" content="pt_BR" />
     <link href="assets/styles.css" rel="stylesheet"></head>
-    <body>
+    <body class="shop">
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="display: none;visibility: hidden;">
         <filter id="blur">
             <feGaussianBlur stdDeviation="3"></feGaussianBlur>
@@ -40,15 +40,8 @@
                     <input class="search-line no-border" type="text" name="q" placeholder="Поиск" required="" data-search="search-input">
                 </form>
             </div>
-            <div class="logo">
-                
-	<svg class="icon _logo" >
-		<use xlink:href="#iconstore-logo"></use>
-	</svg>
-
-            </div>
             <div class="personal">
-                <a href="/user/profile/">
+                <a class="personal__link" href="/user/profile/">
                     <div class="login">
                         <div class="login__label">Войти</div>
                         
@@ -58,7 +51,7 @@
 
                     </div>
                 </a>
-                <a href="/user/cart/">
+                <a class="personal__link" href="/user/cart/">
                     <div class="cart">
                         
 	<svg class="icon _person" >
@@ -69,18 +62,27 @@
                     </div>
                 </a>
             </div>
+            <div class="logo">
+                <a href="/">
+	<svg class="logo-pic" >
+		<use xlink:href="#iconstore-logo"></use>
+	</svg>
+</a>
+            </div>
         </div>
     </div>
     <div class="header__bottom-line">
         <div class="content _centered">
-            <div class="menu">
-                <div class="menu__item">Каталог</div>
-                <div class="menu__item">Оплата</div>
-                <div class="menu__item">Обмен и возврат</div>
-                <div class="menu__item">Самовывоз</div>
-                <div class="menu__item">Доставка</div>
-                <div class="menu__item">Контакты</div>
-            </div>
+            <nav class="top-menu">
+                <ul class="tm-list">
+                    <li class="tm-item"><a class="tm-link" href="/catalog/">Каталог</a></li>
+                    <li class="tm-item"><a class="tm-link" href="/payment/">Оплата</a></li>
+                    <li class="tm-item"><a class="tm-link" href="/delivery/">Обмен и возврат</a></li>
+                    <li class="tm-item"><a class="tm-link" href="/pickup/">Самовывоз</a></li>
+                    <li class="tm-item"><a class="tm-link" href="/return/">Доставка</a></li>
+                    <li class="tm-item"><a class="tm-link" href="/contacts/">Контакты</a></li>
+                </ul>
+            </nav>
         </div>
     </div>
 </div>

@@ -1,53 +1,143 @@
 @import "~normalize.css";
+@import "reset";
+@import "fonts";
 @import "mixins";
 @import "vars";
-
-.no-border{
-  outline: none;
-  border: 0;
-
+ul
+{
+  list-style-type: none;
 }
-.content{
-  &._centered{
-    width: 1200px;
-    margin: 0 auto;
+.shop {
+  font-family: $font_robot;
+  .no-border {
+    outline: none;
+    border: 0;
+
   }
-  &._wide{
+  .content {
+    position: relative;
+    &._centered {
+      width: 1200px;
+      margin: 0 auto;
+    }
+    &._wide {
+      width: 100%;
+    }
+  }
+  .header {
     width: 100%;
+    height: 145px;
+    background-color: $black;
+    color: $white;
   }
-}
-.header{
-  width: 100%;
-  height: 145px;
-  background-color: $black;
-}
+  .header__top-line{
+    height: 96px;
+    padding-top: 34px;
+  }
+  .icon {
+    fill: $white;
+    background-color: $black;
+    cursor: pointer;
+    &._search {
+      height: 24px;
+      width: 24px;
+    }
+    &._person {
+      height: 36px;
+      width: 36px;
+      fill: $black;
+    }
+    &._cart {
 
-.icon{
-  fill:$white;
-  background-color: $black;
-  cursor: pointer;
-  &._search{
+    }
+  }
+  .search {
+    display: inline-block;
+    padding-left: 14px;
+  }
+  .personal {
+    display: inline-block;
+    float: right;
+    padding-right: 7px;
+  }
+  .personal__link {
+    display: inline-block;
+  }
+  .search-line {
+    background-color: $black;
+    color: $white;
     height: 24px;
-    width: 24px;
+    vertical-align: top;
+    &::placeholder {
+      color: white;
+      font-size: 14px;
+    }
   }
-  &._person{
-    height: 36px;
-    width: 36px;
-    fill: $black;
+  .logo-pic {
+    width: 125px;
+    height: 55px;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: -14px;
+    transform: translateX(-50%);
   }
-  &._cart{
+  .cls-1 {
+    font-size: 20.11px;
+    fill: #999;
+    font-family: $font_intro;
+  }
+  .cls-2 {
+    fill: #fff;
+  }
+  .cls-3 {
+    fill: none;
+  }
+
+  .login {
 
   }
-}
-.search-line{
-  background-color: $black;
-  color: $white;
-  &::placeholder{
-    color: white;
+  .login__label{
+    width: 39px;
+    height: 34px;
+    color: #fdfcfc;
     font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.11px;
+    display: inline-block;
+    vertical-align: top;
+    transform: translateY(27%);
   }
-}
-
-.login{
-
+  .top-menu {
+    .tm-list {
+      text-align: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between
+    }
+    .tm-item {
+      line-height: 47px;
+      height: 47px;
+      &:first-child > .tm-link {
+        /*padding-left: 32px*/
+      }
+    }
+    .tm-link {
+      display: block;
+      text-decoration: none;
+      white-space: nowrap;
+      padding: 18px 14px;
+      color: white;
+      /*width: 81px;*/
+      height: 14px;
+      font-family: $font_intro;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 13px;
+      letter-spacing: 0.11px;
+    }
+  }
 }
