@@ -1,1 +1,37 @@
-<div class="catalog-list__item"></div>
+<div class="catalog-list__item">
+
+        <div class="product">
+            <div class="product__top">
+                <div class="product__slider js-product-slider">
+                    <div class="product__image" style="background-image: url('/img/fish/g1.jpg')">
+                        <a class="product__link" href="#"></a>
+                    </div>
+                    <div class="product__image" style="background-image: url('/img/fish/g2.jpg')">
+                        <a class="product__link" href="#"></a>
+                    </div>
+                    <div class="product__image" style="background-image: url('/img/fish/g3.jpg')">
+                        <a class="product__link" href="#"></a>
+                    </div>
+                    <div class="product__image" style="background-image: url('/img/fish/g4.jpg')">
+                        <a class="product__link" href="#"></a>
+                    </div>
+                    <div class="product__image" style="background-image: url('/img/fish/g5.jpg')">
+                        <a class="product__link" href="#"></a>
+                    </div>
+                </div>
+                <div class="product__state">
+                    <div class="state-pic _like">{{ svgUse('icn_product_like_default', {class: 'favorite'}) }}</div>
+                    <div class="state-pic _size">XS</div>
+                    <div class="state-pic _size">S</div>
+                    <div class="state-pic _size">M</div>
+                    <div class="state-pic _size">L</div>
+                    <div class="state-pic _size">XL</div>
+                </div>
+            </div>
+            <div class="product__bottom">
+                <div class="product__title">Футболка «ПАЦАНКА НАВСЕГДА»</div>
+                <div class="product__price">900 руб</div>
+            </div>
+        </div>
+    </a>
+</div>

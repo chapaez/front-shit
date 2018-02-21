@@ -1,7 +1,21 @@
-<div class="catalog-menu">
-    <div class="catalog-menu__item">Для нее</div>
-    <div class="catalog-menu__item">Для него</div>
-    <div class="catalog-menu__item">Дети</div>
-    <div class="catalog-menu__item">Игры</div>
-    <div class="catalog-menu__item">Проекты</div>
+<div class="content _centered">
+    <div class="catalog-menu">
+        <div class="catalog-menu__list">
+            <div class="catalog-menu__item">
+                <a class="catalog-menu__link" href="/catalog/woman/">Для нее</a>
+            </div>
+            <div class="catalog-menu__item">
+                <a class="catalog-menu__link" href="/catalog/man/">Для него</a>
+            </div>
+            <div class="catalog-menu__item">
+                <a class="catalog-menu__link" href="/catalog/children/">Дети</a>
+            </div>
+            <div class="catalog-menu__item">
+                <a class="catalog-menu__link" href="/catalog/games/">Игры</a>
+            </div>
+            <div class="catalog-menu__item">
+                <a class="catalog-menu__link" href="/catalog/projects/">Проекты</a>
+            </div>
+        </div>
+    </div>
 </div>

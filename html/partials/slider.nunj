@@ -1,1 +1,19 @@
-<div class="slider"></div>
+<div class="slider">
+{#    <div class="js-slider-wrap">
+        <div class="slider-item"><img src="/img/slider/slider_img.jpg"></div>
+        <div class="slider-item"><img src="/img/slider/slider_img.jpg"></div>
+        <div class="slider-item"><img src="/img/slider/slider_img.jpg"></div>
+    </div>#}
+    <div class="js-slider-wrap">
+        <div class="slider-item" style="background-image: url('/img/fish/slider_img.jpg')"></div>
+        <div class="slider-item" style="background-image: url('/img/fish/slider_img.jpg')"></div>
+        <div class="slider-item" style="background-image: url('/img/fish/slider_img.jpg')"></div>
+    </div>
+
+    <div class="slick-arrow _left js-left-arrow">
+        {{ svgUse('arrow', {class: 'pic'}) }}
+    </div>
+    <div class="slick-arrow _right js-right-arrow">
+        {{ svgUse('arrow', {class: 'pic'}) }}
+    </div>
+</div>

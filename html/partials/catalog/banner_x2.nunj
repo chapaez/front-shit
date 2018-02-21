@@ -1,1 +1,3 @@
-<div class="catalog-list__item _double _adv"></div>
+<div class="catalog-list__item _double _adv">
+    <div class="catalog-list__banner" style="background-image: url('/img/fish/banner_2.jpg')"></div>
+</div>

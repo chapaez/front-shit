@@ -1,1 +1,11 @@
-<div class="catalog-list__item _wide-banner"></div>
+        </div>
+    </div>
+</div>
+        <div class="content _wide">
+            <div class="banner-stretch">
+                <div class="catalog-list__banner" style="background-image: url('/img/fish/banner_wide.jpg')"></div>
+            </div>
+        </div>
+<div class="catalog-bg">
+    <div class="content _centered">
+        <div class="catalog-list">

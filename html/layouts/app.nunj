@@ -15,6 +15,7 @@
         <meta property="og:description" content="lorem impsun" />
         <meta property="og:image" content="https://www.google.com.br/logos/doodles/2017/childrens-day-2017-brazil-5737042666323968-l.png" />
         <meta property="og:locale" content="pt_BR" />
+        <link rel="stylesheet" type="text/css" href="/css/slick.css"/>
     </head>
     <body class="shop">
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="display: none;visibility: hidden;">
