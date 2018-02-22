@@ -813,6 +813,7 @@ ul {
 
 .shop .product:hover .state-pic._size {
   display: block;
+  opacity: .8;
 }
 
 .shop .product__link {
@@ -827,15 +828,15 @@ ul {
   /*background-size: 100%;*/
   background: no-repeat center;
   background-size: auto 478px;
-  -webkit-transition: background-size 0.1s ease-in;
-  -o-transition: background-size 0.1s ease-in;
-  transition: background-size 0.1s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .shop .product__image:hover {
   opacity: 0.84;
   /*background-size: 120%;*/
-  background-size: auto 558px;
+  background-size: auto 508px;
 }
 
 .shop .product__state {
@@ -892,7 +893,11 @@ ul {
 }
 
 .shop .state-pic._size {
-  display: none;
+  /*display: none;*/
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  opacity: 0;
 }
 
 .shop .state-pic._like {
@@ -930,13 +935,13 @@ ul {
   font-family: "intro_", SansSerif;
   font-size: 16px;
   font-weight: 400;
-  letter-spacing: 0.17px;
+  letter-spacing: 0.30px;
 }
 
 .shop .product__price {
   font-family: "intro_", SansSerif;
   color: #a3a3a3;
-  letter-spacing: 0.17px;
+  letter-spacing: 0.30px;
   width: 100%;
   text-align: center;
   font-weight: bold;
