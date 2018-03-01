@@ -643,7 +643,7 @@ ul {
   font-size: 14px;
 }
 
-.shop .logo-pic {
+.shop .logo {
   width: 125px;
   height: 55px;
   display: inline-block;
@@ -653,6 +653,24 @@ ul {
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
+}
+
+.shop .logo:hover .logo-pic {
+  display: none;
+}
+
+.shop .logo:hover .logo-pic._hovered {
+  display: block;
+}
+
+.shop .logo-pic {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.shop .logo-pic._hovered {
+  display: none;
 }
 
 .shop .cls-1 {

@@ -23,7 +23,10 @@
                 </a>
             </div>
             <div class="logo">
-                <a href="/">{{ svgUse('store-logo', {class: 'logo-pic'}) }}</a>
+                <a href="/">
+                    {{ svgUse('store-logo', {class: 'logo-pic'}) }}
+                    {{ svgUse('logo-size-fixed', {class: 'logo-pic _hovered'}) }}
+                </a>
             </div>
         </div>
     </div>

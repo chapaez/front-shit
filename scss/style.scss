@@ -100,7 +100,7 @@ ul
       font-size: 14px;
     }
   }
-  .logo-pic {
+  .logo{
     width: 125px;
     height: 55px;
     display: inline-block;
@@ -108,6 +108,22 @@ ul
     left: 50%;
     top: -14px;
     transform: translateX(-50%);
+    &:hover{
+      .logo-pic{
+        display: none;
+        &._hovered {
+          display: block;
+        }
+      }
+    }
+  }
+  .logo-pic {
+    width: 100%;
+    height: 100%;
+    display: block;
+    &._hovered{
+      display: none;
+    }
   }
   .cls-1 {
     font-size: 20.11px;
