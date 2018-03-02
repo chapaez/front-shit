@@ -1,0 +1,8 @@
+<div class="order-step">
+    <div class="order-step__headline">шаг 1:</div>
+    <div class="order-step__headline _pink">Информация о получателе</div>
+    <div class="order-step__subhead">Ваши личные данные</div>
+    <input class="order-step__input" type="text" name="ORDER_PROP_1" placeholder="Ф.И.О.">
+    <input class="order-step__input" type="text" name="ORDER_PROP_3" placeholder="Номер телефона">
+    <input class="order-step__input" type="text" name="ORDER_PROP_2" placeholder="Email">
+</div>

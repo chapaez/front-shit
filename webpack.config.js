@@ -27,7 +27,7 @@ const pages = glob.sync('**/*.njk', {
     root: '/',
 }).map(page =>
     new HtmlWebpackPlugin({
-        filename: path.join(basePath, 'main.html'),
+        filename: path.join(basePath, '/assets/html/'+page.slice(0,-4)+'_page.html'),
         template: `html/pages/${page}`,
     })
 );

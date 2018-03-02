@@ -1,0 +1,12 @@
+<div class="order-step">
+    <div class="order-step__headline">шаг 2:</div>
+    <div class="order-step__headline _pink">Выбор способа получения заказа</div>
+    <div class="order-step__subhead">Адрес доставки</div>
+    <input type="hidden" name="ORDER_PROP_6" value="0">
+    <input class="order-step__input js-city-select" type="text" placeholder="Город">
+    <input class="order-step__input" type="text" name="ORDER_PROP_4" placeholder="Индекс">
+    <div class="order-step__subhead">способ доставки</div>
+    {% include 'delivery_type.nunj' %}
+    {% include 'delivery_type.nunj' %}
+    <textarea class="order-step__notes" placeholder="Примечания"></textarea>
+</div>

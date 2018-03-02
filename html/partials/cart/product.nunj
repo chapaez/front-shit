@@ -1,0 +1,74 @@
+<div class="product-block">
+    <div class="product-block__left-column">
+        <div class="head-text">Товар</div>
+        <div class="product-body">
+            <div class="product-body__image"></div>
+            <div class="product-body__text-info">
+                <div class="text-info__title"></div>
+                <div class="text-info__description">
+                    <div class="product-description">
+                        <div class="product-description__text">
+                            Футболка <br>
+                            «ПАЦАНКА НАВСЕГДА»
+                        </div>
+                        <div class="product-description__delete">
+                            х Удалить из корзины
+                        </div>
+                    </div>
+                </div>
+                <div class="coupon">
+                    <div class="coupon__description">
+                        Если у Вас есть купон на скидку,
+                        введите его номер сюда
+                    </div>
+                    <input type="text" id="coupon__input" name="COUPON" value="" onchange="enterCoupon();">
+                    <div class="coupon__btn"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="product-block__right-column">
+        <div class="product-data _likes">
+            <div class="head-text"></div>
+            <div class="product-data__body"><div class="round _like"></div></div>
+        </div>
+        <div class="product-data _count">
+            <div class="head-text">Количество</div>
+            <div class="product-data__body">
+                <div class="count _plus js-count-plus"></div>
+                <div class="round _count"></div>
+                <div class="count _minus js-count-minus"></div>
+            </div>
+        </div>
+        <div class="product-data _size">
+            <div class="head-text">Размер</div>
+            <div class="product-data__body">
+                <div class="round _size">L</div>
+            </div>
+        </div>
+        <div class="product-data _price">
+            <div class="head-text">Цена</div>
+            <div class="product-data__body">
+                <div class="price">10 000 руб</div>
+            </div>
+        </div>
+    </div>
+    <div class="product-block__buttons">
+        <div class="button js-make-order">
+            оформить заказ
+        </div>
+        <div class="button">
+            <a class="full-size-href" href="/">
+                продолжить покупки
+            </a>
+        </div>
+        <div class="summary">
+            <div class="summary__text">
+                ИТОГО
+            </div>
+            <div class="summary__count">
+                900 руб
+            </div>
+        </div>
+    </div>
+</div>

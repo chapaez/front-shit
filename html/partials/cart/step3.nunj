@@ -1,0 +1,14 @@
+<div class="order-step">
+    <div class="order-step__headline">шаг 3:</div>
+    <div class="order-step__headline _pink">Выбор способа оплаты</div>
+    <div class="order-step__subhead">Оплатить свой заказ можно как наличными, так и электронными средствами.</div>
+    <input type="hidden" name="PAY_SYSTEM_ID" value="0">
+    <div class="order-step__line _delivery-type js-delivery-type">
+        <div class="round-radio"></div>
+        <div class="delivery-type-text">Пластиковой  картой через сайт</div>
+    </div>
+    <div class="order-step__line _delivery-type js-delivery-type _active">
+        <div class="round-radio"></div>
+        <div class="delivery-type-text">Наличные курьеру</div>
+    </div>
+</div>

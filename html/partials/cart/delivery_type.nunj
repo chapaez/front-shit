@@ -1,0 +1,10 @@
+<div class="delivery-type">
+    <div class="delivery-type__head">
+        <div class="round-radio"></div>
+        <div class="price"></div>
+    </div>
+    <div class="delivery-type__description">
+        Самовывоз в пунктах выдачи
+    </div>
+    <div class="delivery-type__subtext">от 2 дней</div>
+</div>
