@@ -1,15 +1,19 @@
-<div class="product-block">
+<div class="product-block _first">
     <div class="product-block__left-column">
         <div class="head-text">Товар</div>
         <div class="product-body">
             <div class="product-body__image"></div>
             <div class="product-body__text-info">
-                <div class="text-info__title"></div>
+                <div class="text-info__title">
+                    Футболка<br/>
+                    «ПАЦАНКА НАВСЕГДА»
+                </div>
                 <div class="text-info__description">
                     <div class="product-description">
                         <div class="product-description__text">
-                            Футболка <br>
-                            «ПАЦАНКА НАВСЕГДА»
+                            Эксклюзивное платье созданное  совместно с Black Star Wear,
+                            специально для проекта "Пацанки" в рамках
+                            эксклюзивной коллекции Cheeky.
                         </div>
                         <div class="product-description__delete">
                             х Удалить из корзины
@@ -21,8 +25,8 @@
                         Если у Вас есть купон на скидку,
                         введите его номер сюда
                     </div>
-                    <input type="text" id="coupon__input" name="COUPON" value="" onchange="enterCoupon();">
-                    <div class="coupon__btn"></div>
+                    <input type="text" class="coupon__input" name="COUPON" value="">
+                    <div class="coupon__btn">применить</div>
                 </div>
             </div>
         </div>

@@ -6,7 +6,7 @@
     <input class="order-step__input js-city-select" type="text" placeholder="Город">
     <input class="order-step__input" type="text" name="ORDER_PROP_4" placeholder="Индекс">
     <div class="order-step__subhead">способ доставки</div>
-    {% include 'delivery_type.nunj' %}
-    {% include 'delivery_type.nunj' %}
+    {% include 'partials/cart/delivery_type.nunj' %}
+    {% include 'partials/cart/delivery_type.nunj' %}
     <textarea class="order-step__notes" placeholder="Примечания"></textarea>
 </div>

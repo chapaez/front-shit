@@ -412,4 +412,168 @@ ul
     height: 40px;
     width: 80px;
   }
+
+  //////////////////cart/////////////////
+  .product-block {
+    padding: 30px;
+    margin-top: 14px;
+    &._first {
+      padding: 0 15px;
+    }
+  }
+  .product-block{
+    font-size: 14px;
+  }
+  .head-text{
+    font-weight: 500;
+    padding: 24px 0;
+  }
+  .product-body__image{
+    width: 173px;
+    height: 218px;
+    background-image: url("/img/fish/girl.jpg");
+    background-size: contain;
+    display: inline-block;
+  }
+  .product-body__text-info{
+    display: inline-block;
+  }
+  .text-info__title{
+    font-family: $font_intro;
+  }
+  .product-description__text{
+    width: 425px;
+  }
+  .product-description__delete{
+    color: $darkGray;
+  }
+  .coupon__description{
+    color: $darkGray;
+    width: 156px;
+    font-size: 10px;
+  }
+  .coupon__input{
+    width: 230px;
+    padding: 8px;
+    background-color: $grayInput;
+    border: none;
+    outline: none;
+    display: inline-block;
+    &::placeholder{
+      color: $darkerGray;
+      font-size: 13px;
+    }
+  }
+  .coupon__btn{
+    font-size: 12px;
+    width: 98px;
+    height: 26px;
+    background-color: $black;
+    color: $white;
+    padding: 8px 14px;
+    font-family: $font_intro;
+  }
+  .button{
+    height: 44px;
+    background-color: $black;
+    color: $white;
+    padding: 17px 34px;
+    font-size: 12px;
+    cursor: pointer;
+    display: inline-block;
+  }
+  .summary{
+    height: 44px;
+    background-color: $pink;
+    float: right;
+    color: white;
+    font-family: $font_intro;
+  }
+  .summary__text{
+    font-size: 12px;
+  }
+  .summary__count{
+    font-size: 24px;
+  }
+  .order-step__headline{
+    font-family: $font_intro;
+    color: $black;
+    font-size: 18px;
+    &._pink{
+      color: $pink;
+    }
+  }
+  .order-step__subhead{
+    font-size: 14px;
+    margin: 24px 0;
+  }
+  .order-step__input{
+    width: 376px;
+    height: 26px;
+    background-color: $grayInput;
+    border: none;
+    outline: none;
+    padding: 0 8px;
+    font-size: 13px;
+    line-height: 26px;
+    &::placeholder{
+      color: $darkGray;
+    }
+  }
+  .full-size-href{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: white;
+  }
+  .round-radio{
+    width: 12px;
+    height: 12px;
+    border: 1px solid $darkGray;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .price{
+    display: inline-block;
+    color: $darkGray;
+    font-size: 18px;
+    font-family: $font_intro;
+  }
+  .delivery-type{
+    font-size: 14px;
+  }
+  .delivery-type__head{
+    width: 120px;
+    display: inline-block;
+
+  }
+  ._pinker{
+    &:hover{
+      .round-radio{
+        border-color: $pink;
+      }
+      .price{
+        color: $pink;
+      }
+    }
+  }
+  .delivery-type__subtext{
+    font-weight: 900;
+  }
+  .order-step__notes{
+    background-color: $grayInput;
+    font-size: 13px;
+    width: 377px;
+    height: 80px;
+    &::placeholder{
+      color: $darkerGray;
+      font-size: 13px;
+    }
+  }
+  .round-radio{
+
+  }
+}
+.logo-url-text{
+  font-family: $font_intro;
 }
