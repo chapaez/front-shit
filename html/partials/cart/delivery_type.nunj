@@ -1,7 +1,7 @@
 <div class="delivery-type">
     <div class="delivery-type__head _pinker">
         <div class="round-radio"></div>
-        <div class="price">200 РУБ</div>
+        <div class="delivery-price">200 РУБ</div>
     </div>
     <div class="delivery-type__description">
         Самовывоз в пунктах выдачи

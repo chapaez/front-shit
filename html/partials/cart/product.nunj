@@ -25,7 +25,7 @@
                         Если у Вас есть купон на скидку,
                         введите его номер сюда
                     </div>
-                    <input type="text" class="coupon__input" name="COUPON" value="">
+                    <input type="text" class="coupon__input" name="COUPON" value="" placeholder="Промокод">
                     <div class="coupon__btn">применить</div>
                 </div>
             </div>
@@ -34,20 +34,22 @@
     <div class="product-block__right-column">
         <div class="product-data _likes">
             <div class="head-text"></div>
-            <div class="product-data__body"><div class="round _like"></div></div>
+            <div class="product-data__body">
+                <div class="state-pic _like">{{ svgUse('icn_product_like_default', {class: 'favorite'}) }}</div>
+            </div>
         </div>
         <div class="product-data _count">
             <div class="head-text">Количество</div>
             <div class="product-data__body">
-                <div class="count _plus js-count-plus"></div>
-                <div class="round _count"></div>
-                <div class="count _minus js-count-minus"></div>
+                <div class="count _minus js-count-minus">-</div>
+                <div class="state-pic _count">1</div>
+                <div class="count _plus js-count-plus">+</div>
             </div>
         </div>
         <div class="product-data _size">
             <div class="head-text">Размер</div>
             <div class="product-data__body">
-                <div class="round _size">L</div>
+                <div class="state-pic _size">L</div>
             </div>
         </div>
         <div class="product-data _price">

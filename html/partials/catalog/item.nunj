@@ -21,7 +21,7 @@
                 </div>
                 <div class="product__state">
                     <div class="state-pic _like">{{ svgUse('icn_product_like_default', {class: 'favorite'}) }}</div>
-                    <div class="state-pic _size">XS</div>
+                    <div class="state-pic _size _hover-show">XS</div>
                     <div class="state-pic _size">S</div>
                     <div class="state-pic _size">M</div>
                     <div class="state-pic _size">L</div>

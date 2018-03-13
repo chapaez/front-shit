@@ -5,10 +5,10 @@
     <input type="hidden" name="PAY_SYSTEM_ID" value="0">
     <div class="order-step__line _delivery-type js-delivery-type _pinker">
         <div class="round-radio"></div>
-        <div class="delivery-type-text">Пластиковой  картой через сайт</div>
+        <div class="delivery-type-text _pink_hovered">Пластиковой  картой через сайт</div>
     </div>
-    <div class="order-step__line _delivery-type js-delivery-type _active">
+    <div class="order-step__line _delivery-type js-delivery-type _pinker _active">
         <div class="round-radio"></div>
-        <div class="delivery-type-text">Наличные курьеру</div>
+        <div class="delivery-type-text _pink_hovered">Наличные курьеру</div>
     </div>
 </div>
