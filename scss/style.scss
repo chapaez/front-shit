@@ -21,6 +21,9 @@ ul
     &._centered {
       width: 1200px;
       margin: 0 auto;
+      @include bpt{
+        width: 100%;
+      }
     }
     &._wide {
       width: 100%;
@@ -31,6 +34,9 @@ ul
     height: 145px;
     background-color: $black;
     color: $white;
+    @include bpt{
+      height: 60px;
+    }
   }
   .header__top-line{
     height: 96px;
@@ -59,6 +65,9 @@ ul
   .slider-item{
     height: 365px;
     background-position: center;
+  }
+  .main-slider-pic{
+    fill:$white;
   }
   .slick-arrow{
     position: absolute;
@@ -139,6 +148,8 @@ ul
     fill: none;
   }
 
+
+
   .login {
 
   }
@@ -153,7 +164,150 @@ ul
     vertical-align: top;
     transform: translateY(27%);
   }
+  .tablet {
+    display: none;
+    @include bpt {
+      display: block;
+    }
+  }
+  /////////////////// burger ///////////////////////////
+  .burger-menu {
+      background: #090401;
+      cursor: pointer;
+      height: 39px;
+      position: relative;
+      left: 0;
+      top: 0;
+      width: 37px;
+      z-index: 1000;
+      overflow: hidden
+  }
+
+  .burger-menu:after {
+      content: "";
+      position: relative;
+      width: 100%;
+      height: 100%;
+      z-index: 5;
+      background-color: $pink;
+      opacity: 0;
+      display: block;
+      transition: opacity .25s ease-in
+  }
+
+   .burger-menu:hover:after {
+        opacity: 1
+   }
+  @media(max-width: 667px) {
+     .burger-menu {
+      right:.5em;
+      top: .5em
+    }
+  }
+
+   .burger-menu .bar {
+    background: #fff;
+    display: block;
+    height: 4px;
+    left: 50%;
+    margin: -2px 0 0 -10px;
+    position: absolute;
+    top: 50%;
+    transition: all .3s;
+    width: 20px;
+    z-index: 10
+  }
+
+   .burger-menu .bar:before, .burger-menu .bar:after {
+    background: #fff;
+    content: '';
+    height: 4px;
+    position: absolute;
+    transition: all .3s;
+    width: 20px
+  }
+
+   .burger-menu .bar:before {
+    margin-top: -7px
+  }
+
+   .burger-menu .bar:after {
+    margin-top: 7px
+  }
+
+   .burger-menu:hover .burger-menu {
+    margin-left: -12px;
+    width: 24px
+  }
+
+   .burger-menu:hover .burger-menu:before, .burger-menu:hover .burger-menu:after {
+    width: 24px
+  }
+  ._close .burger-menu {
+    position: relative;
+  }
+
+  @media(min-width: 1023px),(orientation:portrait) and (min-width:1023px) {
+    ._close .burger-menu {
+      background:none
+    }
+  }
+
+  ._close .burger-menu .bar {
+    background: none;
+    margin-left: -10px !important
+  }
+
+  ._close .burger-menu .bar::before,._close .burger-menu .bar::after {
+    background: #fff
+  }
+
+  ._close .burger-menu .bar:before {
+    margin: 0;
+    -webkit-transform: rotate(230deg);
+    -moz-transform: rotate(230deg);
+    -ms-transform: rotate(230deg);
+    -o-transform: rotate(230deg);
+    transform: rotate(230deg);
+    width: 20px !important
+  }
+
+  ._close .burger-menu .bar:after {
+    margin: 0;
+    -webkit-transform: rotate(130deg);
+    -moz-transform: rotate(130deg);
+    -ms-transform: rotate(130deg);
+    -o-transform: rotate(130deg);
+    transform: rotate(130deg);
+    width: 20px !important
+  }
+
+  ._close .burger-menu .bar:hover::before,._close .burger-menu .bar:hover::after {
+    background: #fff
+  }
+
+  ._close ul {
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    opacity: 1;
+    z-index: 999;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0)
+  }
+
+  ._close .oldie nav {
+    left: 0
+  }
+
+  ////////////////////////////////////////////////////////////////
+
   .top-menu {
+    @include bpt{
+      display: none;
+    }
     .tm-list {
       text-align: center;
       display: -webkit-box;
@@ -287,7 +441,8 @@ ul
     &:hover{
       opacity: 0.84;
       /*background-size: 120%;*/
-      background-size: auto 508px;
+      /*background-size: auto 508px;*/
+      transform: scale(1.1);
     }
   }
   .product__state{
@@ -492,6 +647,7 @@ ul
   }
   .coupon__input{
     width: 230px;
+    height: 30px;
     padding: 0 8px;
     background-color: $grayInput;
     border: none;
@@ -560,6 +716,9 @@ ul
   }
   .product-block__buttons{
     margin: 43px -15px 27px -15px;
+    &._info{
+      margin-top: 33px;
+    }
   }
   .summary__text{
     font-size: 12px;
@@ -659,6 +818,9 @@ ul
     line-height: 20px;
     vertical-align: top;
   }
+  ._cursor{
+    cursor: pointer;
+  }
   ._pinker{
     &:hover,&._active{
       .round-radio{
@@ -740,6 +902,182 @@ ul
     &._black{
       background-color: $black;
     }
+  }
+  .product-cart-block__cart-link{
+    color: $black;
+    margin-top: 50px;
+  }
+  ////////////////product-detail/////////////////////
+  .product-detail{
+    background-color: $white;
+    padding: 15px;
+  }
+  .product-detail__head{
+    font-family: $font_intro;
+    font-size: 24px;
+    position: relative;
+  }
+  .product-detail__like{
+    position: absolute;
+    right: -40px;
+    top: 0;
+    z-index: 10;
+  }
+  .product-detail__price{
+    color: $pink;
+    margin-top: 15px;
+  }
+  .product-detail__body{
+    font-size: 14px;
+    margin-top: 46px;
+  }
+  .product-cart-block__cart-link{
+    display: inline-block;
+  }
+  .product-cart-block__cart-count{
+    display: inline-block;
+  }
+  .product-cart-block__cart-pic{
+    display: inline-block;
+  }
+  .product-detail__cart{
+    fill: transparent;
+    stroke: $darkGray;
+    width: 34px;
+    height: 34px;
+    margin-bottom: -7px;
+  }
+  .product-detail__description{
+    margin-top: 4px;
+    &._title{
+      margin-top: 20px;
+      font-weight: 900;
+    }
+  }
+  .product-sizes__item{
+    display: inline-block;
+  }
+  .gallery{
+    vertical-align: top;
+  }
+  .gallery__detail-slider{
+    display: inline-block;
+    position: relative;
+  }
+  .gallery__detail-list{
+    width: 620px;
+    height: 755px;
+
+  }
+
+  .gallery__thumbnail-list{
+    padding: 30px 0;
+  }
+  .gallery__slider{
+    width: 140px;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+  }
+  .product-detail__left-column{
+    display: inline-block;
+    width: 390px;
+    vertical-align: top;
+  }
+  .product-detail__right-column{
+    display: inline-block;
+    width: 770px;
+  }
+  .gallery__detail-picture{
+    width: 560px;
+    height: 755px;
+    background: no-repeat center;
+    background-size: contain;
+  }
+  .gallery__thumbnail-item{
+    width: 140px;
+    height: 177px;
+    cursor: pointer;
+    background: no-repeat center;
+    background-size: contain;
+  }
+  /*.slick-prev,.slick-next{
+    position: absolute;
+
+    z-index: 10;
+    font-size: 0;
+    border: 0;
+  }
+  .slick-prev{
+    top: 0;
+    left: 50%;
+  }*/
+  .gallery__arrow-pic{
+    width: 30px;
+    height: 30px;
+    fill: $darkGray;
+  }
+  .gallery__arrow{
+    position: absolute;
+    cursor: pointer;
+    display: none;
+    &._up{
+      transform:  translateX(-50%) rotate(90deg);
+      left: 50%;
+      top: 0;
+    }
+    &._down{
+      transform:  translateX(-50%) rotate(-90deg);
+      left: 50%;
+      bottom: 0;
+    }
+  }
+  .lb-data .lb-close{
+    background-image: url("/img/close.svg");
+  }
+  .lb-number{
+    display: none !important;
+  }
+  .lb-cancel{
+    background-image: url("/img/loading.gif");
+  }
+  .lb-nav a.lb-prev{
+    background: url("/img/arrow.svg") 40px 48% no-repeat;
+    background-size: 20px;
+  }
+  .lb-nav a.lb-next{
+    background: url("/img/arrow.svg") 40px 48% no-repeat;
+    background-size: 20px;
+    transform: scaleX(-1);
+  }
+  .gallery__detail-picture-link{
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .gallery__detail-arrow{
+    position: absolute;
+    cursor: pointer;
+    &._left{
+      transform:  translateY(-50%);
+      left: 0;
+      top: 50%;
+    }
+    &._right{
+      transform:  translateY(-50%) rotate(180deg);
+      right: 0;
+      top: 50%;
+    }
+  }
+  .product-other__head{
+    width: 100%;
+    font-family: $font_intro;
+    padding: 16px 0 12px;
+    text-align: center;
+    background-color: $white;
+    margin-top: 12px;
+    margin-bottom: 5px;
   }
 }
 .logo-url-text{

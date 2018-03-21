@@ -2,6 +2,13 @@
 <div class="header">
     <div class="header__top-line">
         <div class="content _centered">
+            <div class="tablet">
+                <div class="tablet-menu_top">
+                    <div class="burger-menu js-show-tablet-menu">
+                        <span class="bar"></span>
+                    </div>
+                </div>
+            </div>
             <div class="search">
                 <form class="main-search" action="/catalog/index" method="GET" data-search="search-box">
                     {{ svgUse('icn_header_search', {class: 'icon _search'}) }}

@@ -3,7 +3,7 @@
     <div class="order-step__line _half-tall">
         <div class="order-step__column _1">1. Шапка серо-черная 1 шт. </div>
         <div class="order-step__column _2">1800 руб.</div>
-        <div class="order-step__column _3">х  Удалить из корзины</div>
+        <div class="order-step__column _3 _cursor js-delete-cart-item">х  Удалить из корзины</div>
     </div>
     <div class="order-step__line _bold _tall">
         <div class="order-step__column _1">Итого стоимость товаров </div>
@@ -15,7 +15,7 @@
     <div class="order-step__line">
         <div class="order-step__column _1">Самовывоз в пунктах выдачи</div>
         <div class="order-step__column _2">190 руб.</div>
-        <div class="order-step__column _3">х  Изменить</div>
+        <div class="order-step__column _3 _cursor js-change-delivery">х  Изменить</div>
     </div>
     <div class="order-step__line _tall">
         <div class="order-step__column _1">

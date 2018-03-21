@@ -11,9 +11,9 @@
     </div>
 
     <div class="slick-arrow _left js-left-arrow">
-        {{ svgUse('arrow', {class: 'pic'}) }}
+        {{ svgUse('arrow', {class: 'pic main-slider-pic'}) }}
     </div>
     <div class="slick-arrow _right js-right-arrow">
-        {{ svgUse('arrow', {class: 'pic'}) }}
+        {{ svgUse('arrow', {class: 'pic main-slider-pic'}) }}
     </div>
 </div>

@@ -1,0 +1,19 @@
+{% extends "layouts/app.nunj" %}
+{% from "lib/macro.nunj" import svgUse %}
+
+{% set title = 'Product page' %}
+
+{% block content %}
+    <div class="product-wrapper">
+        {% include 'partials/slider.nunj' %}
+        <div class="content _centered">
+            <div class="product-detail">
+                {% include 'partials/product/info.nunj' %}
+                {% include 'partials/product/gallery.nunj' %}
+            </div>
+        </div>
+        <div class="content _centered">
+            {% include 'partials/product/other.nunj' %}
+        </div>
+    </div>
+{% endblock %}

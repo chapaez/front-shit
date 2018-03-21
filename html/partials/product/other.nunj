@@ -1,0 +1,15 @@
+<div class="product-other">
+    <div class="product-other__head">идеи для образа</div>
+    <div class="catalog-bg">
+        <div class="content _centered">
+            <div class="catalog-list">
+                {% include 'partials/catalog/item.nunj' %}
+                {% include 'partials/catalog/item.nunj' %}
+                {% include 'partials/catalog/item.nunj' %}
+                {% include 'partials/catalog/item.nunj' %}
+                {% include 'partials/catalog/item.nunj' %}
+                {% include 'partials/catalog/item.nunj' %}
+            </div>
+        </div>
+    </div>
+</div>
