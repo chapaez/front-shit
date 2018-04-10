@@ -30,6 +30,11 @@
                 {{ svgUse('img_footer_mastercard', {class: 'payment-icon'}) }}
                 {{ svgUse('img_footer_visa', {class: 'payment-icon'}) }}
             </div>
+            <div class="popups">
+                {% include '../partials/popups/auth.nunj' %}
+                {% include '../partials/popups/favorite.nunj' %}
+                {% include '../partials/popups/product.nunj' %}
+            </div>
         </div>
     </div>
 </div>

@@ -1,5 +1,14 @@
 <div class="catalog-bg">
     <div class="content _centered">
+        <div class="catalog-head">
+            <div class="catalog-head__headline">Товары</div>
+            <div class="catalog-head-sort">
+                <div class="catalog-head-sort__item _active">По популярности</div>
+                <div class="catalog-head-sort__item">По цене</div>
+                <div class="catalog-head-sort__item">По скидкам</div>
+                <div class="catalog-head-sort__item">По новинкам </div>
+            </div>
+        </div>
         <div class="catalog-list">
             {% include 'partials/catalog/banner_x1.nunj' %}
             {% include 'partials/catalog/banner_x2.nunj' %}
@@ -16,6 +25,14 @@
             {% include 'partials/catalog/item.nunj' %}
             {% include 'partials/catalog/item.nunj' %}
             {% include 'partials/catalog/item.nunj' %}
+        </div>
+        <div class="catalog-pagenav">
+            <a href="" class="catalog-pagenav__arrow _left"></a>
+            <a href=""  class="catalog-pagenav__item _active">1</a>
+            <a href=""  class="catalog-pagenav__item">2</a>
+            <a href=""  class="catalog-pagenav__item">3</a>
+            <a href=""  class="catalog-pagenav__item">4</a>
+            <a href=""  class="catalog-pagenav__arrow _right"></a>
         </div>
     </div>
 </div>

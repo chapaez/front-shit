@@ -1,0 +1,55 @@
+<div class="popup-product-detail__head">
+    <div class="popup-product-detail__title">
+        Футболка<br>
+        «ПАЦАНКА НАВСЕГДА»
+    </div>
+    <div class="popup-product-detail__price">900 руб<div class="price-discount _left">456 руб</div></div>
+</div>
+<div class="popup-product-detail__body">
+    <div class="popup-product-detail__description">
+        <div class="popup-product-detail__description _title">Описание</div>
+        <div class="popup-product-detail__description _text">
+            Эксклюзивное платье пошитое совместно
+            с Black Star Wear, специально для проекта "Пацанки" в рамках эксклюзивной
+            коллекции Cheeky.
+        </div>
+    </div>
+
+    <div class="popup-product-detail__description">
+        <div class="popup-product-detail__description _title">Состав</div>
+        <div class="popup-product-detail__description _text">хлопок 70%, полиэстер 30%</div>
+    </div>
+
+    <div class="popup-product-detail__description">
+        <div class="popup-product-detail__description _title _line">Артикул: ПТ-0001</div>
+        <div class="popup-product-detail__description _text  _line">ПТ-0001</div>
+    </div>
+
+    <div class="popup-product-detail__description">
+        <div class="popup-product-detail__description _title">Длина рукава:</div>
+        <div class="popup-product-detail__description _text">S — 60 см</div>
+        <div class="popup-product-detail__description _text">M — 61 см</div>
+        <div class="popup-product-detail__description _text">L — 61 см</div>
+        <div class="popup-product-detail__description _text">XL — 62 см</div>
+    </div>
+
+    <div class="popup-product-detail__description">
+        <div class="popup-product-detail__description _title">Длина по спинке изделия:</div>
+        <div class="popup-product-detail__description _text">S — 92 см</div>
+        <div class="popup-product-detail__description _text">M — 61 см</div>
+        <div class="popup-product-detail__description _text">L — 61 см</div>
+        <div class="popup-product-detail__description _text">XL — 62 см</div>
+    </div>
+</div>
+<div class="popup-product-detail-block__buttons _info">
+    <div class="button">
+        <a class="full-size-href" href="/">
+            ДОБАВИТЬ В КАРЗИНУ
+        </a>
+    </div>
+    <div class="button">
+        <a class="full-size-href" href="/">
+            СТРАНИЦА ТОВАРА
+        </a>
+    </div>
+</div>

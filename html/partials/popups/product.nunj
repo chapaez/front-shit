@@ -1,0 +1,14 @@
+<div class="popup _hidden" id="product-popup">
+    <div class="popup-overlay js-popup-close" data-target="#product-popup"></div>
+    <div class="popup-wrap">
+        <div class="popup-close js-popup-close" data-target="#product-popup">{{ svgUse('close', {class: 'popup-close-pic'}) }}</div>
+        <div class="popup-product js-popup-product">
+            <div class="popup-product__left-column">
+                {% include 'partials/popups/_product_gallery.nunj' %}
+            </div>
+            <div class="popup-product__right-column">
+                {% include 'partials/popups/_product_info.nunj' %}
+            </div>
+        </div>
+    </div>
+</div>

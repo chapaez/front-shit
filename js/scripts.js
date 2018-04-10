@@ -1,4 +1,7 @@
 $(function () {
+    var $scroller = $('.js-slide-up'),
+        $scrollContainer = $('.page-content');
+
     $('.js-slider-wrap').slick({
         prevArrow: $('.js-left-arrow'),
         nextArrow: $('.js-right-arrow'),
@@ -56,5 +59,44 @@ $(function () {
     $thumItems.click(function () {
         $galleryDetailSlick.slick('slickGoTo', $(this).data('num'));
     });
+    $('.js-popup-close').click(function () {
+        hidePopup($($(this).data('target')));
+    });
+    function hidePopup(popup) {
+        popup.addClass('_hidden');
+    }
+    function showProductPopup(product) {
+        $('#product-popup').removeClass('_hidden');
+    }
+    $('.js-show-product-popup').click(function () {
+        showProductPopup($(this));
+    });
 
+    function checkScroller() {
+        if($(window).scrollTop()>0 && !($scroller.hasClass('_showed'))){
+            $scroller.addClass('_showed');
+        }
+        if($(window).scrollTop()===0){
+            $scroller.removeClass('_showed');
+        }
+    }
+    setInterval(function() {
+        if(didScroll) {
+            didScroll = false;
+            checkScroller();
+        }
+    }, 300);
+    function scrollStuff() {
+        didScroll = true;
+    }
+    $(window).on('touchmove',function(){
+        scrollStuff();
+    });
+    $(window).scroll(function(){
+        scrollStuff();
+    });
+    $scroller.click(function () {
+        $(window).scrollTop(0,0);
+        $(this).removeClass('_showed');
+    });
 });

@@ -38,5 +38,6 @@
         {% block counters %}
             {% include 'partials/counters.nunj' %}
         {% endblock %}
+        <div class="slide-up js-slide-up _showed">{{ svgUse('vertical-arrow', {class: 'slide-up-pic'}) }}</div>
     </body>
 </html>
