@@ -1116,6 +1116,28 @@ ul {
   color: #f91258;
 }
 
+.shop .personal__left-column {
+  display: inline-block;
+  width: 20%;
+}
+
+.shop .personal__right-column {
+  display: inline-block;
+}
+
+.shop .personal-menu {
+  font-family: "intro_", SansSerif;
+  font-size: 16px;
+}
+
+.shop .personal-menu__item._active {
+  color: #f91258;
+}
+
+.shop .personal-data__input {
+  display: inline-block;
+}
+
 .shop .catalog-menu__list {
   text-align: center;
   display: -webkit-box;

@@ -1,0 +1,4 @@
+<div class="personal-menu">
+    <a class="personal-menu__item _active">Мои данные</a>
+    <a class="personal-menu__item">Мои заказы</a>
+</div>

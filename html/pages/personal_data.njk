@@ -1,0 +1,17 @@
+{% extends "layouts/app.nunj" %}
+{% from "lib/macro.nunj" import svgUse %}
+
+{% set title = 'Personal data' %}
+
+{% block content %}
+    <div class="personal-wrapper">
+        <div class="content _centered">
+            <div class="personal__left-column">
+                {% include 'partials/personal/menu.nunj' %}
+            </div>
+            <div class="personal__right-column">
+                {% include 'partials/personal/data.nunj' %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
