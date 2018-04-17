@@ -1125,7 +1125,13 @@ ul {
           height: 30px; } }
   .shop .payment-icon {
     height: 40px;
-    width: 80px; }
+    width: 80px;
+    fill: #ffffff; }
+    @media (max-width: 1024px) {
+      .shop .payment-icon {
+        width: 30%;
+        max-width: 80px;
+        padding-right: 3%; } }
   .shop .cart-wrapper {
     background-color: #f4f3f3; }
   .shop .product-block {

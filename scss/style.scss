@@ -891,6 +891,12 @@ ul
   .payment-icon{
     height: 40px;
     width: 80px;
+    fill: $white;
+    @include bpt{
+      width: 30%;
+      max-width: 80px;
+      padding-right: 3%;
+    }
   }
 
   //////////////////cart/////////////////
