@@ -1,13 +1,32 @@
 <!DOCTYPE html>
-<html class="no-js" lang="pt-br">
+<html class="no-js" lang="ru-RU">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>{{ title }}</title>
         <meta name="description" content="Lorem description">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, maximum-scale=1.0"/>
+        <meta name="HandheldFriendly" content="True"/>
         <meta name="format-detection" content="telephone=no">
-        
+        <meta http-equiv="Cache-Control" content="no-cache"/>
+        <meta http-equiv="cleartype" content="on"/>
+        <meta http-equiv="imagetoolbar" content="no"/>
+        <meta http-equiv="msthemecompatible" content="no"/>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+        <link rel="apple-touch-startup-image" href="/img/icons/apple-touch-icon.png">
+        <link rel="apple-touch-icon" href="/img/icons/apple-touch-icon.png"/>
+        <link rel="shortcut icon" href="/img/icons/favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="/img/icons/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" sizes="57x57" href="/img/icons/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="/img/icons/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="/img/icons/apple-touch-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="/img/icons/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="/img/icons/apple-touch-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="/img/icons/apple-touch-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="/img/icons/apple-touch-icon-152x152.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-touch-icon-180x180.png" />
 
         <meta property="og:url" content="http://www.google.com.br/" />
         <meta property="og:type" content="website" />
@@ -15,29 +34,37 @@
         <meta property="og:description" content="lorem impsun" />
         <meta property="og:image" content="https://www.google.com.br/logos/doodles/2017/childrens-day-2017-brazil-5737042666323968-l.png" />
         <meta property="og:locale" content="pt_BR" />
+        <meta name="application-name" content="Title"/>
+        <meta name="msapplication-tooltip" content="Description"/>
+
         <link rel="stylesheet" type="text/css" href="/css/slick.css"/>
         <link rel="stylesheet" type="text/css" href="/css/lightbox.css"/>
     </head>
     <body class="shop">
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="display: none;visibility: hidden;">
-        <filter id="blur">
-            <feGaussianBlur stdDeviation="3"></feGaussianBlur>
-        </filter>
-    </svg>
-        <!--[if lte IE 9]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-        {% block header %}
-            {% include 'partials/header.nunj' %}
-        {% endblock %}
-        {% block content %}
-        {% endblock %}
-        {% block footer %}
-            {% include 'partials/footer.nunj' %}
-        {% endblock %}
-        {% block counters %}
-            {% include 'partials/counters.nunj' %}
-        {% endblock %}
-        <div class="slide-up js-slide-up _showed">{{ svgUse('vertical-arrow', {class: 'slide-up-pic'}) }}</div>
+        <div class="push">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="display: none;visibility: hidden;">
+            <filter id="blur">
+                <feGaussianBlur stdDeviation="3"></feGaussianBlur>
+            </filter>
+        </svg>
+            <noscript class="no_script_message">
+                У вас отключен JavaScript. Сайт может отображаться некорректно. Рекомендуем включить JavaScript.
+            </noscript>
+            <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+            <![endif]-->
+            {% block header %}
+                {% include 'partials/header.nunj' %}
+            {% endblock %}
+            {% block content %}
+            {% endblock %}
+            {% block footer %}
+                {% include 'partials/footer.nunj' %}
+            {% endblock %}
+            {% block counters %}
+                {% include 'partials/counters.nunj' %}
+            {% endblock %}
+            <div class="slide-up js-slide-up _showed">{{ svgUse('vertical-arrow', {class: 'slide-up-pic'}) }}</div>
+        </div>
     </body>
 </html>

@@ -1,0 +1,3 @@
+<div class="tablet-menu__item _head">
+    <div class="tablet-menu__logo">{{ svgUse('store-logo', {class: 'logo-pic'}) }}</div>
+</div>

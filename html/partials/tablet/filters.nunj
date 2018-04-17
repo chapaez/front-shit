@@ -1,0 +1,15 @@
+<div class="tablet-menu__item _active _toggle-bg">
+    <a class="tablet-menu__link" href="/tablet/woman/">Для нее</a>
+</div>
+<div class="tablet-menu__item _toggle-bg">
+    <a class="tablet-menu__link" href="/tablet/man/">Для него</a>
+</div>
+<div class="tablet-menu__item _toggle-bg">
+    <a class="tablet-menu__link" href="/tablet/children/">Дети</a>
+</div>
+<div class="tablet-menu__item _toggle-bg">
+    <a class="tablet-menu__link" href="/tablet/games/">Игры</a>
+</div>
+<div class="tablet-menu__item _toggle-bg">
+    <a class="tablet-menu__link" href="/tablet/projects/">Проекты</a>
+</div>

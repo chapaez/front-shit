@@ -2,23 +2,17 @@
 <div class="header">
     <div class="header__top-line">
         <div class="content _centered">
-            <div class="tablet">
-                <div class="tablet-menu_top">
-                    <div class="burger-menu js-show-tablet-menu">
-                        <span class="bar"></span>
-                    </div>
-                </div>
-            </div>
+            {% include 'partials/tablet/menu.nunj' %}
             <div class="search">
                 <form class="main-search" action="/catalog/index" method="GET" data-search="search-box">
                     {{ svgUse('icn_header_search', {class: 'icon _search'}) }}
-                    <input class="search-line no-border" type="text" name="q" placeholder="Поиск" required="" data-search="search-input">
+                    <input class="search-line no-border desktop" type="text" name="q" placeholder="Поиск" required="" data-search="search-input">
                 </form>
             </div>
             <div class="personal">
-                <a class="personal__link" href="/user/profile/">
+                <a class="personal__link" href="/user/login/">
                     <div class="login">
-                        <div class="login__label">Войти</div>
+                        <div class="login__label desktop">Войти</div>
                         {{ svgUse('icn_menu_person', {class: 'icon _person'}) }}
                     </div>
                 </a>

@@ -75,6 +75,10 @@ $font_robot: Roboto, sans-serif;
 @mixin bpm() {
   @media (max-width: 650px) {@content;}
 }
+@mixin bpsm() {
+  @media (max-width: 370px) {@content;}
+}
+
 @mixin bpv($width) {
   @media (max-width: $width+px) { @content; }
 }

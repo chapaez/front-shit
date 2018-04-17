@@ -1,0 +1,12 @@
+<div class="tablet-menu__item">
+    <a class="tablet-menu__link _auth" href="/user/login/">
+        <div class="tablet-menu__login">
+            Войти
+        </div>
+    </a>
+    <a class="tablet-menu__link _ib" href="/user/register/">
+        <div class="tablet-menu__registration">
+            Регистрация
+        </div>
+    </a>
+</div>

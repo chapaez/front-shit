@@ -10478,7 +10478,9 @@ __webpack_require__(6)(__svg__);
 
 /* WEBPACK VAR INJECTION */(function($) {$(function () {
     var $scroller = $('.js-slide-up'),
-        $scrollContainer = $('.page-content');
+        $scrollContainer = $('.page-content'),
+        didScroll=false,
+        $burger = $('.js-show-tablet-menu');
 
     $('.js-slider-wrap').slick({
         prevArrow: $('.js-left-arrow'),
@@ -10492,9 +10494,7 @@ __webpack_require__(6)(__svg__);
         fade: true,
         cssEase: 'linear'
     });
-    $('.js-show-tablet-menu').click(function () {
-        $(this).parent().toggleClass('_close');
-    });
+
     var $thumItems = $('.js-thumb-item');
     if($thumItems.length>4){
         $('.js-gallery-arrow').show();
@@ -10577,6 +10577,13 @@ __webpack_require__(6)(__svg__);
         $(window).scrollTop(0,0);
         $(this).removeClass('_showed');
     });
+    $burger.click(function () {
+        $(this).parent().toggleClass('_close');
+        $('body').toggleClass('_no-overflow');
+        $('.js-tablet-menu-overlay').toggleClass('_active');
+        $('.js-tablet-menu').toggleClass('_active');
+    });
+    /*$burger.bigSlide({menu:'.js-tablet-menu-body'});*/
 });
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 

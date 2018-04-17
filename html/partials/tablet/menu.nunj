@@ -1,0 +1,20 @@
+<div class="tablet">
+    <div class="tablet-menu__overlay js-tablet-menu-overlay"></div>
+    <div class="tablet-menu js-tablet-menu">
+        <div class="burger-menu js-show-tablet-menu">
+            <span class="bar"></span>
+        </div>
+        <div class="scroller">
+            <div class="tablet-menu__body ">
+
+                {% include 'partials/tablet/head.nunj' %}
+                {% include 'partials/tablet/filters.nunj' %}
+                {% include 'partials/tablet/socials.nunj' %}
+                {% include 'partials/tablet/auth.nunj' %}
+                {% include 'partials/tablet/pages.nunj' %}
+                {% include 'partials/tablet/footer.nunj' %}
+
+            </div>
+        </div>
+    </div>
+</div>

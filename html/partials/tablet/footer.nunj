@@ -1,0 +1,9 @@
+<div class="tablet-menu__item _rights">
+    © 2013-2018 «Пятница»<br>
+    Все права защищены
+</div>
+<div class="tablet-menu__item">
+    {{ svgUse('img_footer_mir', {class: 'payment-icon'}) }}
+    {{ svgUse('img_footer_mastercard', {class: 'payment-icon'}) }}
+    {{ svgUse('img_footer_visa', {class: 'payment-icon'}) }}
+</div>

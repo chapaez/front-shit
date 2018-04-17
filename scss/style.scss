@@ -11,6 +11,9 @@ ul
 .shop {
   background-color: $gray;
   font-family: $font_robot;
+  &._no-overflow{
+    overflow: hidden;
+  }
   .no-border {
     outline: none;
     border: 0;
@@ -44,6 +47,14 @@ ul
   .header__top-line{
     height: 96px;
     padding-top: 34px;
+    @include bpt{
+      padding-top: 15px;
+      height: 100%;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 5;
+    }
   }
   .icon {
     fill: $white;
@@ -52,6 +63,10 @@ ul
     &._search {
       height: 24px;
       width: 24px;
+      @include bpt{
+        margin-left: 50px;
+        margin-top: 3px;
+      }
     }
     &._person {
       height: 36px;
@@ -100,6 +115,10 @@ ul
     display: inline-block;
     float: right;
     padding-right: 7px;
+    @include bpt{
+      position: absolute;
+      right: 3%;
+    }
   }
   .personal__link {
     display: inline-block;
@@ -122,6 +141,14 @@ ul
     left: 50%;
     top: -14px;
     transform: translateX(-50%);
+    @include bpt{
+      width: 76px;
+      height: 29px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+    }
     &:hover{
       .logo-pic{
         display: none;
@@ -129,6 +156,9 @@ ul
           display: block;
         }
       }
+    }
+    @include bpt{
+
     }
   }
   .logo-pic {
@@ -175,38 +205,38 @@ ul
   }
   /////////////////// burger ///////////////////////////
   .burger-menu {
-      background: #090401;
-      cursor: pointer;
-      height: 39px;
-      position: relative;
-      left: 0;
-      top: 0;
-      width: 37px;
-      z-index: 1000;
-      overflow: hidden
+    background: #090401;
+    cursor: pointer;
+    height: 39px;
+    position: absolute;
+    right: -50px;
+    top: 10px;
+    width: 37px;
+    z-index: 1000;
+    overflow: hidden
   }
 
   .burger-menu:after {
-      content: "";
-      position: relative;
-      width: 100%;
-      height: 100%;
-      z-index: 5;
-      background-color: $pink;
-      opacity: 0;
-      display: block;
-      transition: opacity .25s ease-in
+    content: "";
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background-color: $pink;
+    opacity: 0;
+    display: block;
+    transition: opacity .25s ease-in
   }
 
-   .burger-menu:hover:after {
-        opacity: 1
+   .tablet-menu._active .burger-menu:after {
+      opacity: 1
    }
-  @media(max-width: 667px) {
+  /*@media(max-width: 667px) {
      .burger-menu {
       right:.5em;
       top: .5em
     }
-  }
+  }*/
 
    .burger-menu .bar {
     background: #fff;
@@ -247,7 +277,7 @@ ul
     width: 24px
   }
   ._close .burger-menu {
-    position: relative;
+    /*position: relative;*/
   }
 
   @media(min-width: 1023px),(orientation:portrait) and (min-width:1023px) {
@@ -847,6 +877,16 @@ ul
     margin-right: 2px;
     width: 40px;
     height: 40px;
+    &._tablet-menu{
+      margin-top: 50%;
+      width: 38px;
+      height: 38px;
+      @include bpsm{
+        width: 30px;
+        height: 30px;
+      }
+
+    }
   }
   .payment-icon{
     height: 40px;
@@ -1395,6 +1435,111 @@ ul
   .slide-up-pic{
     width: 100%;
     height: 100%;
+  }
+  .scroller{
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+  }
+  .tablet-menu{
+    z-index: 10;
+    position: fixed;
+    width: 80%;
+    background: $black;
+    font-family: $font_intro;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: translateX(-100%);
+    transition: all .25s ease-in;
+    &._active{
+      transform: translateX(0);
+    }
+  }
+  .tablet-menu__item{
+    position: relative;
+    color: $white;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    height: $menuHeight;
+    line-height: $menuHeight;
+    padding: 0 31px;
+    &._active{
+      background-color: $pink !important;
+    }
+    &._toggle-bg{
+      &:nth-child(even){
+        background-color: $menuDarkGray;
+
+      }
+    }
+    &._socials{
+      height: $menuHeight+13;
+      padding-right: 0;
+    }
+    &._gray{
+      background-color: $menuDarkGray;
+    }
+    &._rights{
+      line-height: 18px;
+      padding-top: 10px;
+      height: $menuHeight+10px;
+    }
+  }
+  .tablet-menu__logo{
+    width: 67px;
+    height: 29px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .tablet-menu__overlay{
+    display: none;
+    background-color: rgba(0,0,0,.75);
+    position: fixed;
+    cursor: pointer;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 8;
+    &._active{
+      display: block;
+    }
+  }
+  .tablet-menu__body{
+
+  }
+  .tablet-menu__link{
+    color: $white;
+    font-size: 14px;
+    &._auth{
+      display: inline-block;
+      /*margin-right: 13px;
+      padding-right: 13px;
+      border-right: 1px solid white;*/
+    }
+    &._ib{
+      display: inline-block;
+    }
+  }
+  .tablet-menu__login{
+    display: inline;
+    margin-right: 13px;
+    padding-right: 15px;
+    border-right: 1px solid white;
+  }
+  ._vertical-centered{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .desktop{
+    @include bpt{
+      display: none;
+    }
   }
 }
 .logo-url-text{

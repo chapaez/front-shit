@@ -1,0 +1,6 @@
+<li class="tablet-menu__item _gray"><a class="tablet-menu__link" href="/catalog/">Каталог</a></li>
+<li class="tablet-menu__item _gray"><a class="tablet-menu__link" href="/payment/">Оплата</a></li>
+<li class="tablet-menu__item _gray"><a class="tablet-menu__link" href="/delivery/">Обмен и возврат</a></li>
+<li class="tablet-menu__item _gray"><a class="tablet-menu__link" href="/pickup/">Самовывоз</a></li>
+<li class="tablet-menu__item _gray"><a class="tablet-menu__link" href="/return/">Доставка</a></li>
+<li class="tablet-menu__item _gray"><a class="tablet-menu__link" href="/contacts/">Контакты</a></li>
