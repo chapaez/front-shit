@@ -27,12 +27,12 @@
             {% include 'partials/catalog/item.nunj' %}
         </div>
         <div class="catalog-pagenav">
-            <a href="" class="catalog-pagenav__arrow _left"></a>
+            <a href=""  class="catalog-pagenav__item _arrow _left"></a>
             <a href=""  class="catalog-pagenav__item _active">1</a>
             <a href=""  class="catalog-pagenav__item">2</a>
             <a href=""  class="catalog-pagenav__item">3</a>
             <a href=""  class="catalog-pagenav__item">4</a>
-            <a href=""  class="catalog-pagenav__arrow _right"></a>
+            <a href=""  class="catalog-pagenav__item _arrow _right">{{ svgUse('arrow-nav', {class: 'arrow-nav-pic'}) }}</a>
         </div>
     </div>
 </div>

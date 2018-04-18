@@ -35,7 +35,7 @@
         <div class="product-data _likes">
             <div class="head-text"></div>
             <div class="product-data__body">
-                <div class="state-pic _like">{{ svgUse('icn_product_like_default', {class: 'favorite'}) }}</div>
+                <div class="state-pic _like">{{ svgUse('icn-product-like-default', {class: 'favorite'}) }}</div>
             </div>
         </div>
         <div class="product-data _count">

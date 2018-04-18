@@ -1,6 +1,6 @@
 <div class="content _white-bg">
     <div class="content _centered">
-        <div class="catalog-menu">
+        <div class="catalog-menu desktop">
             <div class="catalog-menu__list">
                 <div class="catalog-menu__item">
                     <a class="catalog-menu__link" href="/catalog/woman/">Для нее</a>

@@ -67,7 +67,7 @@ $font_robot: Roboto, sans-serif;
 }
 
 @mixin bpt() {
-  @media (max-width: 1024px) { @content; }
+  @media (max-width: 1240px) { @content; }
 }
 @mixin bpb() {
   @media (max-width: 700px) { @content; }
@@ -101,7 +101,13 @@ $font_robot: Roboto, sans-serif;
   }
 }
 
-
+@mixin absoluteFull(){
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
 
 
 @mixin transform($name,$value){

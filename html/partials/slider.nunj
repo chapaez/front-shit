@@ -5,9 +5,21 @@
         <div class="slider-item"><img src="/img/slider/slider_img.jpg"></div>
     </div>#}
     <div class="js-slider-wrap">
-        <div class="slider-item" style="background-image: url('/img/fish/slider_img.jpg')"></div>
-        <div class="slider-item" style="background-image: url('/img/fish/slider_img.jpg')"></div>
-        <div class="slider-item" style="background-image: url('/img/fish/slider_img.jpg')"></div>
+        <div class="slider-item">
+            <div class="slider-item__image-sizer">
+                <div class="slider-item__image" style="background-image: url('/img/fish/slider_img.jpg')"></div>
+            </div>
+        </div>
+        <div class="slider-item">
+            <div class="slider-item__image-sizer">
+                <div class="slider-item__image" style="background-image: url('/img/fish/slider_img.jpg')"></div>
+            </div>
+        </div>
+        <div class="slider-item">
+            <div class="slider-item__image-sizer">
+                <div class="slider-item__image" style="background-image: url('/img/fish/slider_img.jpg')"></div>
+            </div>
+        </div>
     </div>
 
     <div class="slick-arrow _left js-left-arrow">

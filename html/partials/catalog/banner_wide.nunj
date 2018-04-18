@@ -2,8 +2,11 @@
     </div>
 </div>
         <div class="content _wide">
-            <div class="banner-stretch">
+            <div class="banner-stretch desktop">
                 <div class="catalog-list__banner" style="background-image: url('/img/fish/banner_wide.jpg')"></div>
+            </div>
+            <div class="banner-stretch less-desktop">
+                <div class="catalog-list__banner _mobile-different" style="background-image: url('/img/fish/banner-stretch-mobile.png')"></div>
             </div>
         </div>
 <div class="catalog-bg">

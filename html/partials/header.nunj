@@ -5,7 +5,7 @@
             {% include 'partials/tablet/menu.nunj' %}
             <div class="search">
                 <form class="main-search" action="/catalog/index" method="GET" data-search="search-box">
-                    {{ svgUse('icn_header_search', {class: 'icon _search'}) }}
+                    {{ svgUse('icn-header-search', {class: 'icon _search'}) }}
                     <input class="search-line no-border desktop" type="text" name="q" placeholder="Поиск" required="" data-search="search-input">
                 </form>
             </div>
@@ -13,12 +13,12 @@
                 <a class="personal__link" href="/user/login/">
                     <div class="login">
                         <div class="login__label desktop">Войти</div>
-                        {{ svgUse('icn_menu_person', {class: 'icon _person'}) }}
+                        {{ svgUse('icn-menu-person', {class: 'icon _person'}) }}
                     </div>
                 </a>
                 <a class="personal__link" href="/user/cart/">
                     <div class="cart">
-                        {{ svgUse('icn_menu_cart', {class: 'icon _person'}) }}
+                        {{ svgUse('icn-menu-cart', {class: 'icon _person'}) }}
                         <div class="orders-count"></div>
                     </div>
                 </a>
@@ -46,3 +46,4 @@
         </div>
     </div>
 </div>
+<div class="header-dummy"></div>

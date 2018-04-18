@@ -6,7 +6,7 @@
                     <a class="product__link" href="#"></a>
                 </div>
             </div>
-            <div class="product__describe js-show-product-popup">{{ svgUse('lupa', {class: 'product__describe-pic'}) }}</div>
+            <div class="product__describe desktop js-show-product-popup">{{ svgUse('lupa', {class: 'product__describe-pic'}) }}</div>
             <div class="product__state">
                 <div class="state-pic _size _hover-show">XS</div>
                 <div class="state-pic _size _hover-show">S</div>

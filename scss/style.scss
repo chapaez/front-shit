@@ -42,19 +42,25 @@ ul
     color: $white;
     @include bpt{
       height: 60px;
-    }
-  }
-  .header__top-line{
-    height: 96px;
-    padding-top: 34px;
-    @include bpt{
-      padding-top: 15px;
-      height: 100%;
       position: fixed;
       width: 100%;
       top: 0;
       z-index: 5;
     }
+  }
+  .header-dummy{
+    position: relative;
+    height: 60px;
+  }
+  .header__top-line{
+    height: 96px;
+    padding-top: 34px;
+    @include bpt{
+      height: 100%;
+      padding-top: 15px;
+
+    }
+
   }
   .icon {
     fill: $white;
@@ -81,8 +87,16 @@ ul
     position: relative;
   }
   .slider-item{
-    height: 365px;
     background-position: center;
+  }
+  .slider-item__image{
+    @include absoluteFull;
+    background-size: cover;
+  }
+  .slider-item__image-sizer{
+    position: relative;
+    height: 0;
+    padding-top: 30%;
   }
   .main-slider-pic{
     fill:$white;
@@ -94,10 +108,18 @@ ul
     &._left{
       transform: translate(-586px,-50%);
       left: 50%;
+      @include bpt{
+        transform: translateY(-50%);
+        left: 5%;
+      }
     }
     &._right{
       transform: translate(586px,-50%) rotate(180deg);
       right: 50%;
+      @include bpt{
+        transform: translateY(-50%) rotate(180deg);
+        right: 5%;
+      }
     }
     &:hover{
       opacity: 0.8;
@@ -607,6 +629,10 @@ ul
     display: inline-block;
     margin-left: 22px;
     cursor: pointer;
+    @include bpt{
+      margin-left: 0;
+      margin-right: 20px;
+    }
     &._active{
       color: $white;
       background-color: $pink;
@@ -617,12 +643,23 @@ ul
     color: #000000;
     font-family: $font_intro;
     font-size: 35px;
+    @include bpt{
+      padding: 0 2%;
+      font-size: 29px;
+    }
   }
   .catalog-head-sort{
     position: absolute;
     right: 0;
     transform: translateY(-50%);
     top: 50%;
+    @include bpt{
+      margin-top: 11px;
+      padding: 0 2%;
+      position: relative;
+      transform: none;
+      font-size: 16px;
+    }
   }
   .catalog-list{
     &:before{
@@ -636,33 +673,62 @@ ul
     }
     /*margin-left: -7px;*/
     margin-right: -7px;
+    @include bpt{
+      padding: 0 1%;
+      margin-right: 0;
+    }
   }
   .catalog-bg{
     background-color: $gray;
   }
   .catalog-list__item{
     width: 33.3%;
-    /*height: 551px;*/
     float: left;
     padding: 7px;
+    @include bpt{
+      width: 50%;
+      padding: 1%;
+    }
+    @include bpm{
+      width: 100%;
+    }
     &._adv{
       height: 362px;
     }
     &._double{
       width: 66.6%;
+      @include bpt{
+        width: 100%;
+      }
     }
     &._wide{
       width: 100%;
+      @include bpt{
+        width: 102%;
+        margin-left: -1%;
+        padding: 1% 0;
+      }
     }
   }
   .banner-stretch{
     height: 362px;
     width: 100%;
+    @include bpt{
+      position: relative;
+      height: 0;
+      padding-top: 68.75%;
+    }
   }
   .catalog-list__banner{
     width: 100%;
     height: 100%;
     background-position: center;
+    &._mobile-different {
+      @include bpt {
+        @include absoluteFull;
+        background-size: cover;
+      }
+    }
   }
   .product{
     background-color: $white;
@@ -691,11 +757,13 @@ ul
     height: 100%;
   }
   .product__image{
-    width: 390px;
-    height: 478px;
-    /*background-size: 100%;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background: no-repeat center;
-    background-size: auto 478px;
+    background-size: cover;
     transition: all 0.2s ease-in;
 
   }
@@ -749,6 +817,9 @@ ul
       transition: all 0.2s ease-in;
       &._hover-show {
         opacity: 0;
+        @include bpt{
+          opacity: 1;
+        }
       }
     }
     &._like{
@@ -762,11 +833,7 @@ ul
       vertical-align: top;
     }
   }
-  .footer{
-    height: 202px;
-    background-color: $black;
-    color: $white;
-  }
+
   .favorite{
     width: 28px;
     height: 28px;
@@ -789,6 +856,14 @@ ul
   }
   .product__slider{
     overflow: hidden;
+    position: relative;
+    height: 0;
+    padding-top: 131.9559%;
+    width: 390px;
+    @include bpt{
+      padding-top: 100%;
+      width: 100%;
+    }
   }
 
   .product__describe{
@@ -851,21 +926,67 @@ ul
   .footer{
     overflow: hidden;
     font-family: $font_intro;
+    height: 202px;
+    background-color: $black;
+    color: $white;
+    @include bpt{
+      height: auto;
+    }
   }
   .footer__logo{
     height: 54px;
+    fill: $white;
+    @include bpt{
+      width: 54%;
+    }
   }
   .footer__content-line{
     margin: 84px auto;
+    @include bpt{
+      margin: 24px auto;
+    }
   }
   .footer__item{
     display: inline-block;
     width: 24.5%;
+    @include bpt{
+      width: 44.5%;
+      text-align: center;
+    }
+    @include bpm{
+      width: 100%;
+      margin-top: 30px;
+    }
     &._rights{
       font-size: 18px;
+      @include bpt{
+        padding-top: 10%;
+      }
+      @include bpm{
+        padding-top: 0;
+      }
     }
     &._payment{
       text-align: center;
+      @include bpm{
+        padding-top: 0;
+      }
+    }
+    &._logo{
+      @include bpt{
+        position: absolute;
+      }
+      @include bpm{
+        position: relative;
+      }
+    }
+    &._socials{
+      @include bpt{
+        position: absolute;
+      }
+      @include bpm{
+        position: relative;
+      }
     }
   }
   .social-link{
@@ -896,6 +1017,9 @@ ul
       width: 30%;
       max-width: 80px;
       padding-right: 3%;
+      &:last-of-type{
+        padding-right: 0;
+      }
     }
   }
 
@@ -1417,9 +1541,15 @@ ul
   }
   .catalog-pagenav{
     margin: 30px 0 60px;
+    @include bpt{
+      text-align: center;
+    }
   }
-  .catalog-pagenav__arrow{
-    display: inline-block;
+
+  .arrow-nav-pic{
+    width: 26px;
+    height: 14px;
+    fill: $black;
   }
   .catalog-pagenav__item{
     width: 30px;
@@ -1435,7 +1565,7 @@ ul
       background-color: $black;
       border-radius: 50%;
       text-align: center;
-      margin: 0 17px;
+      /*margin: 0 17px;*/
     }
   }
   .slide-up-pic{
@@ -1545,6 +1675,12 @@ ul
   .desktop{
     @include bpt{
       display: none;
+    }
+  }
+  .less-desktop{
+    display: none;
+    @include bpt{
+      display: block;
     }
   }
 }

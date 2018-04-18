@@ -1,22 +1,22 @@
 <div class="tablet-menu__item _socials">
     <div class="socials">
         <a href="https://www.facebook.com/friday.ru" target="_blank" class="social-link _fb">
-            {{ svgUse('icn_footer_fb', {class: 'social-icon _tablet-menu'}) }}
+            {{ svgUse('icn-footer-fb', {class: 'social-icon _tablet-menu'}) }}
         </a>
         <a href="https://twitter.com/Friday_TV" class="social-link _tw" target="_blank">
-            {{ svgUse('icn_footer_tw', {class: 'social-icon _tablet-menu'}) }}
+            {{ svgUse('icn-footer-tw', {class: 'social-icon _tablet-menu'}) }}
         </a>
         <a href="https://www.instagram.com/FridayTV/" class="social-link _in" target="_blank">
-            {{ svgUse('icn_footer_in', {class: 'social-icon _tablet-menu'}) }}
+            {{ svgUse('icn-footer-in', {class: 'social-icon _tablet-menu'}) }}
         </a>
         <a href="https://www.youtube.com/subscription_center?add_user=fridaytvchanel" class="social-link _yt" target="_blank">
-            {{ svgUse('icn_footer_yt', {class: 'social-icon _tablet-menu'}) }}
+            {{ svgUse('icn-footer-yt', {class: 'social-icon _tablet-menu'}) }}
         </a>
         <a href="https://www.odnoklassniki.ru/fridaytv" class="social-link _od" target="_blank">
-            {{ svgUse('icn_footer_od', {class: 'social-icon _tablet-menu'}) }}
+            {{ svgUse('icn-footer-od', {class: 'social-icon _tablet-menu'}) }}
         </a>
         <a href="https://vk.com/friday_ru" class="social-link _vk" target="_blank">
-            {{ svgUse('icn_footer_vk', {class: 'social-icon _tablet-menu'}) }}
+            {{ svgUse('icn-footer-vk', {class: 'social-icon _tablet-menu'}) }}
         </a>
     </div>
 </div>

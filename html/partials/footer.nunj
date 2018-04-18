@@ -1,34 +1,35 @@
 <div class="footer">
     <div class="content _centered">
         <div class="footer__content-line">
-            <div class="footer__item _logo">{{ svgUse('logo', {class: 'footer__logo'}) }}</div>
+            <div class="footer__item _logo">{{ svgUse('logo', {class: 'footer__logo',viewBox: "0 0 155.1 62.95"}) }}</div>
             <div class="footer__item _rights">
                 © 2013-2017 «Пятница»<br/>
                 Все права защищены
             </div>
             <div class="footer__item _socials">
                 <a href="https://www.facebook.com/friday.ru" target="_blank" class="social-link _fb">
-                    {{ svgUse('icn_footer_fb', {class: 'social-icon'}) }}
+                    {{ svgUse('icn-footer-fb', {class: 'social-icon'}) }}
                 </a>
                 <a href="https://twitter.com/Friday_TV" class="social-link _tw" target="_blank">
-                    {{ svgUse('icn_footer_tw', {class: 'social-icon'}) }}
+                    {{ svgUse('icn-footer-tw', {class: 'social-icon'}) }}
                 </a>
                 <a href="https://www.instagram.com/FridayTV/" class="social-link _in" target="_blank">
-                    {{ svgUse('icn_footer_in', {class: 'social-icon'}) }}
+                    {{ svgUse('icn-footer-in', {class: 'social-icon'}) }}
                 </a>
                 <a href="https://www.youtube.com/subscription_center?add_user=fridaytvchanel" class="social-link _yt" target="_blank">
-                    {{ svgUse('icn_footer_yt', {class: 'social-icon'}) }}
+                    {{ svgUse('icn-footer-yt', {class: 'social-icon'}) }}
                 </a>
                 <a href="https://www.odnoklassniki.ru/fridaytv" class="social-link _od" target="_blank">
-                    {{ svgUse('icn_footer_od', {class: 'social-icon'}) }}
+                    {{ svgUse('icn-footer-od', {class: 'social-icon'}) }}
                 </a>
                 <a href="https://vk.com/friday_ru" class="social-link _vk" target="_blank">
-                    {{ svgUse('icn_footer_vk', {class: 'social-icon'}) }}
+                    {{ svgUse('icn-footer-vk', {class: 'social-icon'}) }}
                 </a>
             </div>
             <div class="footer__item _payment">
-                {{ svgUse('img_footer_mastercard', {class: 'payment-icon'}) }}
-                {{ svgUse('img_footer_visa', {class: 'payment-icon'}) }}
+                {{ svgUse('img-footer-mir', {class: 'payment-icon'}) }}
+                {{ svgUse('img-footer-mastercard', {class: 'payment-icon'}) }}
+                {{ svgUse('img-footer-visa', {class: 'payment-icon'}) }}
             </div>
             <div class="popups">
                 {% include '../partials/popups/auth.nunj' %}

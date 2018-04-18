@@ -3,7 +3,7 @@
     Все права защищены
 </div>
 <div class="tablet-menu__item">
-    {{ svgUse('img_footer_mir', {class: 'payment-icon'}) }}
-    {{ svgUse('img_footer_mastercard', {class: 'payment-icon'}) }}
-    {{ svgUse('img_footer_visa', {class: 'payment-icon'}) }}
+    {{ svgUse('img-footer-mir', {class: 'payment-icon'}) }}
+    {{ svgUse('img-footer-mastercard', {class: 'payment-icon'}) }}
+    {{ svgUse('img-footer-visa', {class: 'payment-icon'}) }}
 </div>
