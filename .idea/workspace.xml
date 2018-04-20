@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5b9fc004-d8d7-43b8-9637-e3e6e3605144" name="Default" comment="store mainpage changes">
-      <change beforePath="" afterPath="$PROJECT_DIR$/html/pages/personal_data.njk" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/html/partials/personal/data.nunj" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/html/partials/personal/menu.nunj" />
+    <list default="true" id="5b9fc004-d8d7-43b8-9637-e3e6e3605144" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/assets/scripts.js" afterPath="$PROJECT_DIR$/assets/scripts.js" />
       <change beforePath="$PROJECT_DIR$/assets/scripts.js.map" afterPath="$PROJECT_DIR$/assets/scripts.js.map" />
       <change beforePath="$PROJECT_DIR$/assets/styles.css" afterPath="$PROJECT_DIR$/assets/styles.css" />
       <change beforePath="$PROJECT_DIR$/assets/styles.css.map" afterPath="$PROJECT_DIR$/assets/styles.css.map" />
       <change beforePath="$PROJECT_DIR$/assets/styles.js.map" afterPath="$PROJECT_DIR$/assets/styles.js.map" />
+      <change beforePath="$PROJECT_DIR$/html/partials/product/gallery.nunj" afterPath="$PROJECT_DIR$/html/partials/product/gallery.nunj" />
+      <change beforePath="$PROJECT_DIR$/html/partials/product/info.nunj" afterPath="$PROJECT_DIR$/html/partials/product/info.nunj" />
+      <change beforePath="$PROJECT_DIR$/js/scripts.js" afterPath="$PROJECT_DIR$/js/scripts.js" />
+      <change beforePath="$PROJECT_DIR$/scss/_mixins.scss" afterPath="$PROJECT_DIR$/scss/_mixins.scss" />
       <change beforePath="$PROJECT_DIR$/scss/style.scss" afterPath="$PROJECT_DIR$/scss/style.scss" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,21 +23,61 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="style.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scss/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17544">
-              <caret line="1032" column="20" lean-forward="false" selection-start-line="1032" selection-start-column="3" selection-end-line="1032" selection-end-column="20" />
+            <state relative-caret-position="153">
+              <caret line="1252" column="6" lean-forward="false" selection-start-line="1252" selection-start-column="6" selection-end-line="1252" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="personal_data.njk" pinned="false" current-in-tab="true">
+      <file leaf-file-name="product.nunj" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/partials/cart/product.nunj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1139">
+              <caret line="67" column="16" lean-forward="false" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="info.nunj" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/partials/product/info.nunj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1241">
+              <caret line="73" column="36" lean-forward="false" selection-start-line="73" selection-start-column="22" selection-end-line="73" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gallery.nunj" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/partials/product/gallery.nunj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="935">
+              <caret line="55" column="51" lean-forward="false" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_mixins.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scss/_mixins.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1020">
+              <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="personal_data.njk" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/pages/personal_data.njk">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="30" />
+            <state relative-caret-position="272">
+              <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -74,8 +116,8 @@
       <file leaf-file-name="scripts.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="23" lean-forward="false" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+            <state relative-caret-position="663">
+              <caret line="39" column="35" lean-forward="false" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -85,19 +127,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>product__s</find>
-      <find>main</find>
-      <find>width: 68px;</find>
-      <find>opup-product-gallery__detail-pictu</find>
-      <find>popup-product-gallery</find>
-      <find>700px</find>
-      <find>product-detail__left-column</find>
-      <find>product-detail__right-column</find>
-      <find>product-detail__head</find>
-      <find>popup-product-detail__discount</find>
-      <find>gallery</find>
-      <find>__pri</find>
-      <find>product-detail</find>
       <find>popup-product-detail__head</find>
       <find>.popup{</find>
       <find>product__</find>
@@ -114,6 +143,20 @@
       <find>click</find>
       <find>catalog-head</find>
       <find>input</find>
+      <find>gallery__detail-picture-</find>
+      <find>gallery__detail-picture</find>
+      <find>gallery__detail-slider</find>
+      <find>gallery__detail-</find>
+      <find>gallery__thumbnail-list</find>
+      <find>gallery__slider</find>
+      <find>gallery__thumbnail-item</find>
+      <find>lery__thumbnail-item</find>
+      <find>product-detail__like</find>
+      <find>roduct-cart-block__cart-lin</find>
+      <find>product-detail</find>
+      <find>roduct-block__butto</find>
+      <find>продолжить покупки</find>
+      <find>.butt</find>
     </findStrings>
     <replaceStrings>
       <replace>popup-product-gallery</replace>
@@ -122,6 +165,7 @@
     <dirStrings>
       <dir>C:\Users\aberkov\PhpstormProjects\untitled0\html\partials\cart</dir>
       <dir>C:\Users\aberkov\PhpstormProjects\untitled0\html</dir>
+      <dir>C:\Users\aberkov\PhpstormProjects\untitled0</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -138,13 +182,16 @@
         <option value="$PROJECT_DIR$/html/partials/catalog/item.nunj" />
         <option value="$PROJECT_DIR$/img/vertical-arrow.svg" />
         <option value="$PROJECT_DIR$/html/layouts/app.nunj" />
-        <option value="$PROJECT_DIR$/js/scripts.js" />
         <option value="$PROJECT_DIR$/html/partials/catalog/menu.nunj" />
         <option value="$PROJECT_DIR$/html/partials/popups/product.nunj" />
         <option value="$PROJECT_DIR$/html/partials/catalog/list.nunj" />
         <option value="$PROJECT_DIR$/html/partials/personal/menu.nunj" />
         <option value="$PROJECT_DIR$/html/pages/personal_data.njk" />
         <option value="$PROJECT_DIR$/html/partials/personal/data.nunj" />
+        <option value="$PROJECT_DIR$/scss/_mixins.scss" />
+        <option value="$PROJECT_DIR$/js/scripts.js" />
+        <option value="$PROJECT_DIR$/html/partials/product/gallery.nunj" />
+        <option value="$PROJECT_DIR$/html/partials/product/info.nunj" />
         <option value="$PROJECT_DIR$/scss/style.scss" />
       </list>
     </option>
@@ -160,7 +207,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
+    <option name="x" value="1912" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
@@ -180,49 +227,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="store layout" type="b2602c69:ProjectViewProjectNode" />
               <item name="untitled0" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="store layout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="untitled0" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="html" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="store layout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="untitled0" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="html" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="layouts" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="store layout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="untitled0" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="html" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="store layout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="untitled0" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="html" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="store layout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="untitled0" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="html" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="partials" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="store layout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="untitled0" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="html" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="partials" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="personal" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="store layout" type="b2602c69:ProjectViewProjectNode" />
@@ -234,6 +244,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -276,7 +287,11 @@
       <workItem from="1523276873363" duration="13143000" />
       <workItem from="1523350348688" duration="15918000" />
       <workItem from="1523458640073" duration="4915000" />
-      <workItem from="1523895501561" duration="12000" />
+      <workItem from="1523895501561" duration="98000" />
+      <workItem from="1524128325836" duration="890000" />
+      <workItem from="1524131361454" duration="6766000" />
+      <workItem from="1524217215043" duration="19000" />
+      <workItem from="1524217262629" duration="19000" />
     </task>
     <task id="LOCAL-00001" summary="store mainpage changes">
       <created>1523378578433</created>
@@ -285,11 +300,18 @@
       <option name="project" value="LOCAL" />
       <updated>1523378578433</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="store all data">
+      <created>1523895570786</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1523895570786</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34240000" />
+    <option name="totallyTimeSpent" value="42020000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -301,20 +323,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26332623" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2739872" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.225" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18804348" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22065218" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18804348" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22826087" sideWeight="0.4978678" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -358,29 +380,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="store mainpage changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="store mainpage changes" />
+    <MESSAGE value="store all data" />
+    <option name="LAST_COMMIT_MESSAGE" value="store all data" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/pages/personal_data.njk">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/style.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9316">
@@ -516,13 +523,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/partials/product/gallery.nunj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="16" column="61" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="35" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/partials/popups/auth.nunj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -539,13 +539,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/partials/product/info.nunj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="35" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -669,14 +662,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="23" lean-forward="false" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/partials/personal/data.nunj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -693,18 +678,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/style.scss">
+    <entry file="file://$PROJECT_DIR$/html/pages/personal_data.njk">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17544">
-          <caret line="1032" column="20" lean-forward="false" selection-start-line="1032" selection-start-column="3" selection-end-line="1032" selection-end-column="20" />
+        <state relative-caret-position="272">
+          <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/pages/personal_data.njk">
+    <entry file="file://$PROJECT_DIR$/scss/_mixins.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="30" />
+        <state relative-caret-position="1020">
+          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="35" lean-forward="false" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/partials/cart/product.nunj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="67" column="16" lean-forward="false" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/partials/product/gallery.nunj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="55" column="51" lean-forward="false" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/partials/product/info.nunj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1241">
+          <caret line="73" column="36" lean-forward="false" selection-start-line="73" selection-start-column="22" selection-end-line="73" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="1252" column="6" lean-forward="false" selection-start-line="1252" selection-start-column="6" selection-end-line="1252" selection-end-column="6" />
           <folding />
         </state>
       </provider>

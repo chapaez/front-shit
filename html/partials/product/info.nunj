@@ -67,12 +67,12 @@
     <div class="product-block__buttons _info">
         <div class="button">
             <a class="full-size-href" href="/">
-                продолжить покупки
+                оформить заказ
             </a>
         </div>
-        <div class="button">
-            <a class="full-size-href" href="/">
-                оформить заказ
+        <div class="button _empty">
+            <a class="full-size-href _black" href="/">
+                продолжить покупки
             </a>
         </div>
     </div>

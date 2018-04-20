@@ -2,20 +2,30 @@
     <div class="gallery">
         <div class="gallery__detail-slider">
             <div class="gallery__detail-list js-product-detail">
-                <div class="gallery__detail-picture"  style="background-image: url('/img/fish/product-detail-1.jpg')">
-                    <a class="gallery__detail-picture-link" data-lightbox="roadtrip" href="/img/fish/detail_big_2.jpg" data-fancybox="group" data-type='image' data-caption="Caption #1"></a>
+                <div class="gallery__detail-picture-sizer">
+                    <div class="gallery__detail-picture"  style="background-image: url('/img/fish/product-detail-1.jpg')">
+                        <a class="gallery__detail-picture-link" data-lightbox="roadtrip" href="/img/fish/detail_big_2.jpg" data-fancybox="group" data-type='image' data-caption="Caption #1"></a>
+                    </div>
                 </div>
-                <div class="gallery__detail-picture"  style="background-image: url('/img/fish/product-detail-2.jpg')">
-                    <a class="gallery__detail-picture-link" data-lightbox="roadtrip" href="/img/fish/product-detail-1.jpg" data-fancybox="group" data-caption="Caption #2"></a>
+                <div class="gallery__detail-picture-sizer">
+                    <div class="gallery__detail-picture"  style="background-image: url('/img/fish/product-detail-2.jpg')">
+                        <a class="gallery__detail-picture-link" data-lightbox="roadtrip" href="/img/fish/product-detail-1.jpg" data-fancybox="group" data-caption="Caption #2"></a>
+                    </div>
                 </div>
-                <div class="gallery__detail-picture"  style="background-image: url('/img/fish/product-detail-1.jpg')">
-                    <a class="gallery__detail-picture-link" data-lightbox="roadtrip" href="/img/fish/product-detail-2.jpg" data-fancybox="group" data-caption="Caption #3"></a>
+                <div class="gallery__detail-picture-sizer">
+                    <div class="gallery__detail-picture"  style="background-image: url('/img/fish/product-detail-1.jpg')">
+                        <a class="gallery__detail-picture-link" data-lightbox="roadtrip" href="/img/fish/product-detail-2.jpg" data-fancybox="group" data-caption="Caption #3"></a>
+                    </div>
                 </div>
-                <div class="gallery__detail-picture"  style="background-image: url('/img/fish/product-detail-2.jpg')">
-                    <a class="gallery__detail-picture-link" data-lightbox="roadtrip" href="/img/fish/product-detail-1.jpg" data-fancybox="group" data-caption="Caption #4"></a>
+                <div class="gallery__detail-picture-sizer">
+                    <div class="gallery__detail-picture"  style="background-image: url('/img/fish/product-detail-2.jpg')">
+                        <a class="gallery__detail-picture-link" data-lightbox="roadtrip" href="/img/fish/product-detail-1.jpg" data-fancybox="group" data-caption="Caption #4"></a>
+                    </div>
                 </div>
-                <div class="gallery__detail-picture"  style="background-image: url('/img/fish/product-detail-1.jpg')">
-                    <a class="gallery__detail-picture-link" data-lightbox="roadtrip" href="/img/fish/product-detail-2.jpg" data-fancybox="group" data-caption="Caption #5"></a>
+                <div class="gallery__detail-picture-sizer">
+                    <div class="gallery__detail-picture"  style="background-image: url('/img/fish/product-detail-1.jpg')">
+                        <a class="gallery__detail-picture-link" data-lightbox="roadtrip" href="/img/fish/product-detail-2.jpg" data-fancybox="group" data-caption="Caption #5"></a>
+                    </div>
                 </div>
             </div>
             <div class="gallery__detail-arrow _left  js-gallery-detail-arrow js-gallery-detail-left" >{{ svgUse('arrow', {class: 'gallery__arrow-pic'}) }}</div>
@@ -23,11 +33,31 @@
         </div>
         <div class="gallery__slider">
             <div class="gallery__thumbnail-list js-product-thumbnails">
-                <div class="gallery__thumbnail-item js-thumb-item" style="background-image: url('/img/fish/thumb-1.jpg')" data-num="1"></div>
-                <div class="gallery__thumbnail-item js-thumb-item" style="background-image: url('/img/fish/thumb-2.jpg')" data-num="2"></div>
-                <div class="gallery__thumbnail-item js-thumb-item" style="background-image: url('/img/fish/thumb-3.jpg')" data-num="3"></div>
-                <div class="gallery__thumbnail-item js-thumb-item" style="background-image: url('/img/fish/thumb-2.jpg')" data-num="4"></div>
-                <div class="gallery__thumbnail-item js-thumb-item" style="background-image: url('/img/fish/thumb-3.jpg')" data-num="5"></div>
+                <div class="gallery__thumbnail-item">
+                    <div class="gallery__thumbnail-picture-sizer">
+                        <div class="gallery__thumbnail-image js-thumb-item" style="background-image: url('/img/fish/thumb-1.jpg')" data-num="1"></div>
+                    </div>
+                </div>
+                <div class="gallery__thumbnail-item">
+                    <div class="gallery__thumbnail-picture-sizer">
+                        <div class="gallery__thumbnail-image js-thumb-item" style="background-image: url('/img/fish/thumb-2.jpg')" data-num="2"></div>
+                    </div>
+                </div>
+                <div class="gallery__thumbnail-item">
+                    <div class="gallery__thumbnail-picture-sizer">
+                        <div class="gallery__thumbnail-image js-thumb-item" style="background-image: url('/img/fish/thumb-3.jpg')" data-num="3"></div>
+                    </div>
+                </div>
+                <div class="gallery__thumbnail-item">
+                    <div class="gallery__thumbnail-picture-sizer">
+                        <div class="gallery__thumbnail-image js-thumb-item" style="background-image: url('/img/fish/thumb-2.jpg')" data-num="4"></div>
+                    </div>
+                </div>
+                <div class="gallery__thumbnail-item">
+                    <div class="gallery__thumbnail-picture-sizer">
+                        <div class="gallery__thumbnail-image js-thumb-item" style="background-image: url('/img/fish/thumb-3.jpg')" data-num="5"></div>
+                    </div>
+                </div>
             </div>
             <div class="gallery__arrow _up js-gallery-arrow js-gallery-up"    >{{ svgUse('arrow', {class: 'gallery__arrow-pic'}) }}</div>
             <div class="gallery__arrow _down js-gallery-arrow js-gallery-down">{{ svgUse('arrow', {class: 'gallery__arrow-pic'}) }}</div>

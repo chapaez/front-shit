@@ -10508,7 +10508,17 @@ __webpack_require__(6)(__svg__);
         speed: 500,
         cssEase: 'linear',
         slidesToShow:4,
-        slidesToScroll:1
+        slidesToScroll:1,
+        responsive: [
+            {
+                breakpoint: 1240,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 3,
+                    vertical:false,
+                }
+            },
+        ]
     });
     var $galleryDetailSlick = $('.js-product-detail').slick({
         arrows:false,
