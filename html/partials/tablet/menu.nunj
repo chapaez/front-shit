@@ -1,4 +1,4 @@
-<div class="tablet">
+<div class="_tablet">
     <div class="tablet-menu__overlay js-tablet-menu-overlay"></div>
     <div class="tablet-menu js-tablet-menu">
         <div class="burger-menu js-show-tablet-menu">

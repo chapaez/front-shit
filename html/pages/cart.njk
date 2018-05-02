@@ -8,10 +8,12 @@
         {% include 'partials/slider.nunj' %}
         <div class="content _centered">
             {% include 'partials/cart/product.nunj' %}
-            {% include 'partials/cart/step1.nunj' %}
-            {% include 'partials/cart/step2.nunj' %}
-            {% include 'partials/cart/step3.nunj' %}
-            {% include 'partials/cart/step_final.nunj' %}
+            <div class="_hidden js-cart-order-block">
+                {% include 'partials/cart/step1.nunj' %}
+                {% include 'partials/cart/step2.nunj' %}
+                {% include 'partials/cart/step3.nunj' %}
+                {% include 'partials/cart/step_final.nunj' %}
+            </div>
         </div>
     </div>
 {% endblock %}

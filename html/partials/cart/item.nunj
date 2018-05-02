@@ -1,0 +1,53 @@
+<div class="product-item">
+    <div class="product-block__left-column">
+        <div class="head-text">Товар</div>
+        <div class="product-body">
+            <div class="product-body__image-sizer">
+                <div class="product-body__image-wrap">
+                    <div class="product-body__image" style="background-image: url(/img/fish/girl.jpg);"></div>
+                </div>
+            </div>
+            <div class="product-body__text-info">
+                <div class="text-info__title">
+                    Футболка<br/>
+                    «ПАЦАНКА НАВСЕГДА»
+                </div>
+                <div class="text-info__description">
+                    <div class="product-description">
+                        <div class="product-description__text">
+                            Эксклюзивное платье созданное  совместно с Black Star Wear,
+                            специально для проекта "Пацанки" в рамках
+                            эксклюзивной коллекции Cheeky.
+                        </div>
+                        <div class="product-description__delete">
+                            х Удалить из корзины
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="product-block__right-column">
+        <div class="product-data _count">
+            <div class="head-text">Количество</div>
+            <div class="product-data__body">
+                <div class="count _minus js-count-minus">-</div>
+                <div class="state-pic _count">1</div>
+                <div class="count _plus js-count-plus">+</div>
+            </div>
+        </div>
+        <div class="product-data _size">
+            <div class="head-text">Размер</div>
+            <div class="product-data__body">
+                <div class="state-pic _size">L</div>
+            </div>
+        </div>
+        <div class="product-data _price">
+            <div class="head-text">Цена</div>
+            <div class="product-data__body">
+                <div class="price">10 000 руб</div>
+            </div>
+        </div>
+    </div>
+</div>

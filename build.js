@@ -2,7 +2,7 @@ import './js/scripts.js';
 import 'slick-carousel';
 
 require("jquery");
-
+require("godlike.css");
 require("lightbox2");
 
 var __svg__ = { path: './img/*.svg', name: './sprite.svg' };

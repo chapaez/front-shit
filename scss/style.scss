@@ -149,6 +149,7 @@ ul
     background-color: $black;
     color: $white;
     height: 24px;
+    width: 80%;
     vertical-align: top;
     &::placeholder {
       color: white;
@@ -209,7 +210,7 @@ ul
 
   }
   .login__label{
-    width: 39px;
+    /*width: 39px;*/
     height: 34px;
     color: #fdfcfc;
     font-size: 14px;
@@ -219,12 +220,13 @@ ul
     vertical-align: top;
     transform: translateY(27%);
   }
-  .tablet {
+  ._tablet {
     display: none;
     @include bpt {
       display: block;
     }
   }
+
   /////////////////// burger ///////////////////////////
   .burger-menu {
     background: #090401;
@@ -627,6 +629,7 @@ ul
     margin: 32px 0 23px;
   }
   .catalog-head-sort__item{
+    margin-top: 12px;
     font-family: $font_intro;
     font-size: 14px;
     display: inline-block;
@@ -657,7 +660,7 @@ ul
     transform: translateY(-50%);
     top: 50%;
     @include bpt{
-      margin-top: 11px;
+      /*margin-top: 11px;*/
       padding: 0 2%;
       position: relative;
       transform: none;
@@ -1037,7 +1040,7 @@ ul
     &._first {
       position: relative;
       overflow: hidden;
-      padding: 0 15px;
+      padding: 0 15px 20px;
     }
   }
   .product-block{
@@ -1050,33 +1053,51 @@ ul
   }
   .product-body{
     position: relative;
+    font-size: 0;
+  }
+  .product-body__image-sizer{
+    width: 15%;
+    display: inline-block;
+    @include bpb{
+      width: 50%;
+      position: relative;
+    }
+  }
+  .product-body__image-wrap{
+    @include pictureSizedWrap
   }
   .product-body__image{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 173px;
-    height: 218px;
-    background-image: url("/img/fish/girl.jpg");
-    background-size: contain;
-    display: inline-block;
   }
   .product-body__text-info{
-    width: 100%;
-    padding-left: 195px;
+    width: 85%;
+    display: inline-block;
+    font-size: 14px;
     vertical-align: top;
+    padding-left: 15px;
+    @include bpb{
+      padding-left: 0;
+    }
   }
   .text-info__description{
     margin: 30px 0 50px;
   }
   .text-info__title{
     font-family: $font_intro;
+    @include bpb{
+      margin-top: 20px;
+      font-size: 16px;
+    }
   }
   .product-description{
     position: relative;
   }
   .product-description__text{
     width: 425px;
+    max-width: 69%;
+    @include bpm{
+      width: 100%;
+      max-width: 100%;
+    }
   }
   .product-description__delete{
     color: $darkGray;
@@ -1085,6 +1106,13 @@ ul
     cursor: pointer;
     bottom: 0;
     right: 0;
+    @include bpt{
+      bottom: 50%;
+      transform: translateY(50%);
+    }
+    @include bpm{
+      position: relative;
+    }
   }
   .coupon{
     font-size: 0;
@@ -1094,6 +1122,13 @@ ul
     width: 156px;
     font-size: 10px;
     margin-bottom: 12px;
+    @include bpt{
+      font-size: 16px;
+      width: 100%;
+    }
+  }
+  .coupon__interactive{
+    position: relative;
   }
   .coupon__input{
     width: 230px;
@@ -1105,12 +1140,18 @@ ul
     display: inline-block;
     font-size: 14px;
     line-height: 30px;
+    vertical-align: top;
+    @include bpt{
+      width: 100%;
+      padding-right: 100px;
+    }
     &::placeholder{
       color: $darkerGray;
       font-size: 13px;
     }
   }
   .coupon__btn{
+    vertical-align: top;
     font-size: 12px;
     width: 98px;
     background-color: $black;
@@ -1119,17 +1160,38 @@ ul
     line-height: 30px;
     font-family: $font_intro;
     display: inline-block;
+    @include bpt{
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
   }
+  .product-item{
+    position: relative;
+  }
+
   .product-block__right-column{
     position: absolute;
     right: 0;
     top: 0;
+    @include bpb{
+      top: 38px;
+      width: 50%;
+    }
   }
   .product-data{
     display: inline-block;
     vertical-align: top;
     margin-right: 30px;
     text-align: center;
+    &._price{
+      @include bpm{
+        display:none;
+      }
+    }
+    @include bpb{
+      display: block;
+    }
   }
   .product-data__body{
     display: inline-block;
@@ -1143,12 +1205,21 @@ ul
     cursor: pointer;
     &._minus{
       margin-right: 1px;
+      @include bpb{
+        margin-right: 10px;
+      }
+    }
+    &._plus{
+      @include bpb{
+        margin-left: 9px;
+      }
     }
   }
   .button{
     height: 44px;
     line-height: 44px;
     background-color: $black;
+    border: 2px solid $black;
     font-family: $font_intro;
     color: $white;
     padding: 0 34px;
@@ -1158,6 +1229,7 @@ ul
     @include bpt{
       width: 100%;
       margin-top: 20px;
+      text-align: center;
     }
     &._empty{
       background-color: transparent;
@@ -1172,6 +1244,12 @@ ul
     color: white;
     font-family: $font_intro;
     line-height: 44px;
+    @include bpt{
+      float: inherit;
+      text-align: left;
+      position: relative;
+      margin-top: 20px;
+    }
   }
   .product-block__buttons{
     margin: 43px -15px 27px -15px;
@@ -1195,6 +1273,14 @@ ul
     font-size: 24px;
     display: inline-block;
     padding: 0 33px 0 100px;
+    @include bpt{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      text-align: right;
+      padding: 0 30px;
+    }
   }
   .order-step {
     background-color: $white;
@@ -1229,6 +1315,9 @@ ul
     line-height: 26px;
     display: block;
     margin-bottom: 16px;
+    @include bpt{
+      width: 100%;
+    }
     &:last-child{
       margin-bottom: 0;
     }
@@ -1264,6 +1353,7 @@ ul
     display: inline-block;
   }
   .delivery-type__head{
+    cursor: pointer;
     width: 120px;
     display: inline-block;
     margin-bottom: 10px;
@@ -1334,6 +1424,9 @@ ul
     }
   }
   .order-step__line{
+    @include bpt{
+      margin: 20px 0;
+    }
     &._half-tall{
       margin-top: 27px;
     }
@@ -1367,6 +1460,16 @@ ul
     margin-right: -30px;
     display: inline-block;
     font-family: $font_intro;
+    cursor: pointer;
+    @include bpt{
+      width: 100%;
+      text-align: center;
+      margin: auto auto 20px;
+      font-size: 16px;
+    }
+    @include bpm{
+      padding: 0;
+    }
     &._black{
       background-color: $black;
     }
@@ -1390,6 +1493,9 @@ ul
         overflow: hidden;
         clear: both;
       }
+    }
+    @include bpm{
+      position: relative;
     }
   }
   .product-detail__head{
@@ -1445,8 +1551,19 @@ ul
     vertical-align: top;
   }
   .gallery__detail-slider{
-
+    width: 620px;
+    display: inline-block;
     position: relative;
+    @include bpt{
+      width: auto;
+      display: block;
+    }
+    @include bpm{
+      .slick-dots{
+        bottom: 5%;
+      }
+    }
+
   }
   .gallery__detail-list{
     /*width: 620px;
@@ -1467,6 +1584,9 @@ ul
     @include bpt{
       width: 100%;
     }
+    @include bpm{
+      display: none;
+    }
   }
   .product-detail__left-column{
     display: inline-block;
@@ -1477,6 +1597,10 @@ ul
       float: right;
       padding-left: 1.5%;
     }
+    @include bpm{
+      padding-top: 150%;
+      width: 100%;
+    }
   }
   .product-detail__right-column{
     display: inline-block;
@@ -1485,6 +1609,13 @@ ul
       width: 55%;
       float: right;
       padding-right: 1.5%;
+    }
+    @include bpm{
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 4;
+      width: 100%;
     }
   }
   .gallery__detail-picture-sizer{
@@ -1520,6 +1651,9 @@ ul
     fill: $darkGray;
     @include bpt{
       display: none;
+    }
+    @include bpm{
+      display: block;
     }
   }
   .gallery__arrow{
@@ -1570,11 +1704,17 @@ ul
       transform:  translateY(-50%);
       left: 0;
       top: 50%;
+      @include bpm{
+        left: 5%;
+      }
     }
     &._right{
       transform:  translateY(-50%) rotate(180deg);
       right: 0;
       top: 50%;
+      @include bpm{
+        right: 5%;
+      }
     }
   }
   .product-other__head{
@@ -1743,6 +1883,25 @@ ul
       display: block;
     }
   }
+  ._no-mobile{
+    display: block;
+    @include bpm{
+      display: none;
+    }
+  }
+  ._mobile{
+    display: none;
+    @include bpm{
+      display: block;
+    }
+  }
+  ._shown{
+    display: block;
+  }
+  ._hidden{
+    display: none;
+  }
+
 }
 .logo-url-text{
   font-family: $font_intro;

@@ -108,7 +108,7 @@ $font_robot: Roboto, sans-serif;
   top: 0;
   bottom: 0;
 }
-@mixin pictureSizedWrap($heightRatio,$width:100%){
+@mixin pictureSizedWrap($heightRatio:131.9559%,$width:100%){
   height: 0;
   width: $width;
   padding-top: $heightRatio;

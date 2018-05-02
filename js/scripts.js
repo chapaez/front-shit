@@ -5,8 +5,8 @@ $(function () {
         $burger = $('.js-show-tablet-menu');
 
     $('.js-slider-wrap').slick({
-        prevArrow: $('.js-left-arrow'),
-        nextArrow: $('.js-right-arrow'),
+        prevArrow: $(this).find('.js-left-arrow'),
+        nextArrow: $(this).find('.js-right-arrow'),
     });
     $('.js-product-slider').slick({
         arrows:false,
@@ -17,58 +17,18 @@ $(function () {
         cssEase: 'linear'
     });
 
-    var $thumItems = $('.js-thumb-item');
-    if($thumItems.length>4){
-        $('.js-gallery-arrow').show();
-    }
-    console.log($thumItems.length);
-    var $galleryThumbnailSlick = $('.js-product-thumbnails').slick({
-        arrows:false,
-        vertical:true,
-        dots: false,
-        infinite: false,
-        speed: 500,
-        cssEase: 'linear',
-        slidesToShow:4,
-        slidesToScroll:1,
-        responsive: [
-            {
-                breakpoint: 1240,
-                settings: {
-                    arrows: false,
-                    slidesToShow: 3,
-                    vertical:false,
-                }
-            },
-        ]
+    $('[data-scrollto-block]').click(function () {
+        $('html, body').scrollTop($($(this).data('scrollto-block')).offset().top - 60);
     });
-    var $galleryDetailSlick = $('.js-product-detail').slick({
-        arrows:false,
-        dots: false,
-        speed: 1,
-        cssEase: 'linear',
-        slidesToShow:1,
-        slidesToScroll:1,
-        useCSS: false,
-        infinite:true
+    $('[data-show-block]').click(function () {
+        $($(this).data('show-block')).removeClass('_hidden').addClass('_shown');
     });
+    $('[data-hide-block]').click(function () {
+        $($(this).data('hide-block')).removeClass('_shown').addClass('_hidden');
+    });
+    // show product sliders
+    imageGaleryBlock($('.js-product-gallery-wrap')).show();
 
-    $('.js-gallery-up').click(function() {
-        $galleryThumbnailSlick.slick("slickPrev");
-    });
-    $('.js-gallery-down').click(function() {
-        $galleryThumbnailSlick.slick("slickNext");
-    });
-
-    $('.js-gallery-detail-left').click(function() {
-        $galleryDetailSlick.slick("slickPrev");
-    });
-    $('.js-gallery-detail-right').click(function() {
-        $galleryDetailSlick.slick("slickNext");
-    });
-    $thumItems.click(function () {
-        $galleryDetailSlick.slick('slickGoTo', $(this).data('num'));
-    });
     $('.js-popup-close').click(function () {
         hidePopup($($(this).data('target')));
     });
@@ -77,10 +37,119 @@ $(function () {
     }
     function showProductPopup(product) {
         $('#product-popup').removeClass('_hidden');
+        imageGaleryBlock($('.js-popup-product-gallery-wrap')).show();
     }
     $('.js-show-product-popup').click(function () {
         showProductPopup($(this));
     });
+    /////////////////////////////////////////////////
+    function imageGaleryBlock(obj) {
+        if(obj.length===0){
+            return {
+                show:function () {
+                },
+                hide:function () {
+                },
+                error:true
+            };
+        }
+        var $galleryUpBtn = obj.find('.js-gallery-up'),
+            $galleryDownBtn = obj.find('.js-gallery-down'),
+            $galleryDetailLeftBtn = obj.find('.js-gallery-detail-left'),
+            $galleryDetailRightBtn = obj.find('.js-gallery-detail-right'),
+            $galleryArrowBlock = obj.find('.js-gallery-arrow'),
+            $thumbItem = obj.find('.js-thumb-item'),
+            $thumbnailList = obj.find('.js-product-thumbnails'),
+            $detailList = obj.find('.js-product-detail');
+
+
+        var getThumbnailOptions = function () {
+            return{
+                arrows:false,
+                vertical:true,
+                dots: false,
+                infinite: false,
+                speed: 500,
+                cssEase: 'linear',
+                slidesToShow:4,
+                slidesToScroll:1,
+                responsive: [
+                    {
+                        breakpoint: 1240,
+                        settings: {
+                            arrows: false,
+                            slidesToShow: 3,
+                            vertical:false,
+                        }
+                    },
+                ]
+            };
+        };
+        var getDetailSlickOptions = function()  {
+            return {
+                arrows:false,
+                dots: false,
+                speed: 1,
+                cssEase: 'linear',
+                slidesToShow:1,
+                slidesToScroll:1,
+                useCSS: false,
+                infinite:true,
+                responsive: [
+                    {
+                        breakpoint: 651,
+                        settings: {
+                            dots: true,
+                        }
+                    },
+                ]
+            };
+        };
+        var init = function () {
+
+        };
+        init();
+        return {
+            object: obj,
+            $galleryDetailSlick: {},
+            $galleryThumbnailSlick: {},
+            error:false,
+            init:function () {
+
+            },
+            show: function () {
+                if($thumbItem.length>4){
+                    $galleryArrowBlock.show();
+                }
+
+                this.$galleryDetailSlick = $detailList.slick(getDetailSlickOptions());
+                this.$galleryThumbnailSlick = $thumbnailList.slick(getThumbnailOptions());
+                var self = this;
+                $galleryUpBtn.click(function() {
+                    self.$galleryThumbnailSlick.slick("slickPrev");
+                });
+                $galleryDownBtn.click(function() {
+                    self.$galleryThumbnailSlick.slick("slickNext");
+                });
+
+                $galleryDetailLeftBtn.click(function() {
+                    self.$galleryDetailSlick.slick("slickPrev");
+                });
+                $galleryDetailRightBtn.click(function() {
+                    self.$galleryDetailSlick.slick("slickNext");
+                });
+                $thumbItem.click(function () {
+                    self.$galleryDetailSlick.slick('slickGoTo', $(this).data('num'));
+                });
+
+            },
+            hide: function () {
+
+            }
+
+        };
+    }
+
 
     function checkScroller() {
         if($(window).scrollTop()>0 && !($scroller.hasClass('_showed'))){

@@ -1,4 +1,4 @@
-<div class="popup-product-gallery">
+<div class="popup-product-gallery js-popup-product-gallery-wrap">
 
     <div class="popup-product-gallery__detail-slider">
         <div class="popup-product-gallery__slider">

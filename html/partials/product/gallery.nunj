@@ -1,5 +1,5 @@
 <div class="product-detail__right-column">
-    <div class="gallery">
+    <div class="gallery js-product-gallery-wrap">
         <div class="gallery__detail-slider">
             <div class="gallery__detail-list js-product-detail">
                 <div class="gallery__detail-picture-sizer">
