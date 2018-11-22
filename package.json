@@ -3,13 +3,8 @@
   "version": "0.0.1",
   "main": "js/index.js",
   "scripts": {
-    "build": "webpack",
-    "watch": "webpack -w",
-    "webpackimg": "webpack --config webpack.img.config.js",
-    "webpack": "webpack",
-    "publish": "tsc && webpack --config webpack.production.config.js",
-    "dist": "tsc && webpack --config webpack.dist.config.js",
-    "start": "http-server -p 8000"
+    "build": "webpack --config webpack.production.config.js",
+    "watch": "webpack -w"
   },
   "devDependencies": {
     "autoprefixer": "^8.4.1",
@@ -47,6 +42,8 @@
     "jquery-ui": "^1.12.1",
     "lightbox2": "^2.10.0",
     "normalize.css": "^8.0.0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "deep-extend": ">=0.5.1",
+    "randomatic": ">=3.0.0"
   }
 }

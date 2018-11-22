@@ -1,12 +1,41 @@
 var webpack = require('webpack');
 var path = require('path');
+const autoprefixer = require('autoprefixer');
+const glob = require('glob');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+var SvgStore = require('webpack-svgstore-plugin');
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+
+const isDev = false;
+const basePath = process.cwd();
+
+const nunjucksContext = require('./html/data');
+const nunjucksDevConfig = require('./html/config.dev.json');
+const nunjucksProdConfig = require('./html/config.prod.json');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+
+nunjucksContext.config = (isDev) ? nunjucksDevConfig : nunjucksProdConfig;
+
+const nunjucksOptions = JSON.stringify({
+    searchPaths: basePath + '/html/',
+    context: nunjucksContext
+});
+
+const pages = glob.sync('**/*.njk', {
+    cwd: path.join(basePath, 'html/pages/'),
+    root: '/',
+}).map(page =>
+    new HtmlWebpackPlugin({
+        filename: path.join(basePath, '/assets/html/'+page.slice(0,-4)+'_page.html'),
+        template: `html/pages/${page}`,
+    })
+);
 
 module.exports = {
     context: __dirname,
     entry: {
-        hell: ["./js/index.js"],
+        scripts: ["./build.js"],
         styles: ["./scss/style.scss"]
     },
 
@@ -14,11 +43,9 @@ module.exports = {
         libraryTarget: "umd",
         library: "friday",
         filename: '[name].js',
-        path: path.resolve(__dirname, './../web/public/assets')
+        path: path.resolve(__dirname, './assets')
     },
 
-    // Enable sourcemaps for debugging webpack's output.
-    devtool: "source-map",
 
     resolve: {
         extensions: [".webpack.js", ".web.js", ".js"]
@@ -26,41 +53,67 @@ module.exports = {
 
     module: {
         rules: [
-            // All files with a '.ts' or '.tsx' extension will be handled by 'awesome-typescript-loader'.
-            { test: /\.tsx?$/, loader: "awesome-typescript-loader" },
-            // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
-            { test: /\.js$/, enforce: "pre", loader: "source-map-loader" },
-
             { test: /\.woff2?$|\.ttf$|\.eot$|\.svg$/, loader: 'file-loader?name=fonts/[name].[ext]?[hash]'},
 
             { test: /\.png|\.jpe?g|\.gif$/, loader: 'file-loader?name=img/[name].[ext]?[hash]'},
-            
+
             {
                 test: /\.scss$/,
-                loader: ExtractTextPlugin.extract({ fallback: 'style-loader', use: 'css-loader!resolve-url-loader?keepQuery!sass-loader?sourceMap'})
+                loader: ExtractTextPlugin.extract({
+                    fallback: 'style-loader',
+                    use: [
+                        {
+                            loader: 'css-loader',
+                            options : { autoprefixer: false, sourceMap: false, importLoaders: 1, minimize: true }
+                        },
+                        {
+                            loader: 'resolve-url-loader',
+                            options: {keepQuery:true}
+                        },
+                        {
+                            loader: 'postcss-loader',
+                            options: {
+                                plugins: [
+                                    autoprefixer({
+                                        browsers:['ie >= 10', 'last 4 version']
+                                    })
+                                ],
+                                sourceMap: false
+                            }
+                        },
+                        {
+                            loader: 'sass-loader',
+                            options: {sourceMap:false}
+                        }
+                    ]
+                })
             },
-            { test: /\.css$/, use: [ 'style-loader', { loader: 'css-loader', options: { minimize: true } } ] }
+            { test: /\.css$/, use: [ 'style-loader', 'css-loader' ] },
+            {
+                test: /\.(njk|nunjucks)$/,
+                loader: ['html-loader', `nunjucks-html-loader?${nunjucksOptions}`]
+            },
         ]
     },
-
     plugins:[
-        new webpack.DefinePlugin({
-            "process.env": {
-                NODE_ENV: JSON.stringify("production")
-            }
-        }),
-        new webpack.LoaderOptionsPlugin({
-            minimize: true,
-            debug: false
-        }),
+        ...pages,
         new ExtractTextPlugin({ filename: '[name].css', disable: false, allChunks: true }),
-        new UglifyJSPlugin()
-    ],
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery'
+        }),
+        new SvgStore({
+            // svgo options
+            svgoOptions: {
+                plugins: [
+                    { removeTitle: true }
+                ]
+            },
+            prefix: 'icon'
+        }),
+        new UglifyJsPlugin({ test: /\.js($|\?)/i }),
 
-    // When importing a module whose path matches one of the following, just
-    // assume a corresponding global variable exists and use that instead.
-    // This is important because it allows us to avoid bundling all of our
-    // dependencies, which allows browsers to cache those libraries between builds.
+    ],
     externals: {
     },
 };
