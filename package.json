@@ -44,6 +44,8 @@
     "normalize.css": "^8.0.0",
     "slick-carousel": "^1.8.1",
     "deep-extend": ">=0.5.1",
-    "randomatic": ">=3.0.0"
+    "randomatic": ">=3.0.0",
+    "macaddress": ">=0.2.9",
+    "cryptiles": ">=4.1.2"
   }
 }
